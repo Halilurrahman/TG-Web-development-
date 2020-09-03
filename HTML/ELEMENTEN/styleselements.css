@@ -11,17 +11,10 @@ body {
   }
  .p {
     color: rgb(19, 16, 16);
-    f
+  
   }
-  /* .z {height: 30px; */
-
-  } 
-  .vid{ margin: 0 auto; width: 50%; 
+ 
+  .vid { margin: 0 auto; width: 50%; 
 
   }
 
-  .footer{
-    /* position: fixed; */
-  bottom: 0;
-  /* border-top: 1px solid rgb(0, 0, 0); */
-  width: 100%;}
