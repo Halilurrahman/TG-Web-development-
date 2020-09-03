@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesforms.css">
+</head>
+
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+    <h1>HTML Forms</h1>
+
+    <h3>1. Maak een HTML form waarbij de gebruiker zijn naam en achternaam in kan
+        vullen.</h3>
+    <form>
+        <label for="achternaam">Achternaam:</label>
+        <input type="text" id="achternaam" name="achternaam" value="achternaam"><br><br>
+        <label for="voornaam">Voornaam:</label>
+        <input type="text" id="voornaam" name="voornaam" value="voornaam"><br><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br><br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd"><br><br>
+        <label for="Geboortedatum">Geboortedatum:</label>
+        <input type="date" id="Geboortedatum" name="Geboortedatum"><br><br>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="gsearch">Search Google:</label>
+        <input type="search" id="gsearch" name="gsearch"><br><br>
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt"><br><br>
+        <input type="reset" value="Reset"><br><br>
+        <input type="submit" value="Submit"><br><br>
+    </form>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit"><br><br>
+
+    </form>
+
+    <h3>4. Een formulier kun je ook groeperen. Bouw dit voorbeeld na.</h3>
+
+
+    <form style="font-family: fantasy;" action=""><br>
+
+        <fieldset>
+            <legend>Persoonsgegevens:</legend><br>
+            <label for="achternaam">Achternaam:</label>
+            <input type="text" id="achternaam" name="achternaam" value="achternaam"><br><br>
+            <label for="voornaam">Voornaam:</label>
+            <input type="text" id="voornaam" name="voornaam" value="voornaam"><br><br>
+            <label for="birthday">Geboortedatum:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+            <label for="Postcode">Postcode:</label>
+            <input type="text" id="Postcode" name="Postcode" value="Postcode"><br><br>
+            <label for="Adres">Adres:</label>
+            <input type="text" id="Adres" name="Adres" value="Adres"><br><br>
+        </fieldset>
+        <input type="submit" value="Submit"><input type="reset" value="Reset">
+        <br><br>
+    </form>
+
+
+
+    <h3>5. Naast input element heb je ook een select element. Hiermee kan je een
+        dropdown list maken. Maak een drop down list.</h3>
+
+    <form action="/action_page.php">
+        <label for="LOTR">Choose your favorite Lord of the Rings character!:</label>
+        <select name="LOTR" id="LOTR">
+            <option value="Faramir">Faramir</option>
+            <option value="Aragorn">Aragorn</option>
+            <option value="Samwise">Samwise</option>
+            <option value="Frodo">Frodo</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h3>6. We hebben nu geleerd hoe je dropdown list, radio buttons en checkboxes
+        maak. Dit zijn 3 verschillende manieren om de gebruiker een keuze te laten
+        maken. Benoem voor dropdown list, radio buttons en checkboxes een situatie
+        waar je in kan gebruiken en leg dat uit?</h3>
+
+    <p>Radio buttons zijn handig als je de gebruiker enkel 1 ding wilt laten kiezen geslacht bijvoorbeeld, bij
+        checkboxen daarintegen
+        kan je meerdere opties kiezen, denk aan bezittingen of voorkeuren voor muziekstijlen. Het voordeel van de
+        dropdown list is dat het weinig ruimte in beslag neemt maar wel veel opties biedt.
+    </p>
+
+    <h3>
+        7. Maak een reserveringsformulier om een sport te reserveren. In dit formulier
+        willen we graag het volgende weten:
+        ● Naam van dat persoon
+        ● Off hij/zij lidmaatschap heeft
+        ● E-mail van dat persoon
+        ● Type sport om te reserveren. Keuze uit: tafeltennis, badminton of squash
+        ● Datum en tijdstip om te reserveren
+        ● Een checkbox waarbij de gebruiker akkoord gaat over de reserverings
+        voorwaardes
+        ● Een submit knop</h3>
+
+    <form>
+        <fieldset>
+            <legend>Reserveringsformulier:</legend><br>
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" value="naam"><br><br>
+            <input type="radio" id="lid" name="lidmaatschap" value="lid">
+            <label for="lid">Ik ben al lid</label>
+            <input type="radio" id="geenlid" name="lidmaatschap" value="geenlid">
+            <label for="geenlid">Ik ben nog geen lid</label><br><br>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="sport">Kies je sport!:</label><br>
+            <select name="sport" id="sport">
+                <option value="tafeltennis">tafeltennis</option>
+                <option value="badminton">badminton</option>
+                <option value="squash">squash</option>
+            </select><br><br>
+            <label for="reserveren">Reserveer(datum en tijdstip):</label>
+            <input type="datetime-local" id="reserveren" name="reserveren"><br><br>
+            <input type="checkbox" id="akkoord" name="akkoord" value="akkoord">
+            <label for="akkoord"> Ik ga akkoord met de reserveringsvoorwaarden</label><br><br>
+            <input type="submit" value="Submit"><br><br>
+        </fieldset>
+    </form><br>
+
+    <h3>8. Maak een reserverings formulier om een boek te reserveren. In dit formulier
+        willen we graag het volgende weten:
+        ● Naam van dat persoon
+        ● Telefoonnummer
+        ● E-mail van dat persoon
+        ● Naam van dat boek
+        ● Aantal boeken om te reserveren. Het aantal moet minimaal 1 en maximaal 5
+        zijn.
+        ● Een submit knop</h3>
+
+    <form>
+        <fieldset>
+            <legend>Reserveringsformulier bibliotheek Alexandria:</legend><br>
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" value="naam"><br><br>
+            <label for="email">Voer hier je mail in:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Voer hier je telefoonnummer in:</label>
+            <input type="tel" id="phone" name="phone" placeholder="12-3456-7890" pattern="[0-9]{}-[0-9]{4}-[0-9]{4}"
+                required><br><br>
+            <label for="boeken">Te reserveren boek(en):</label>
+            <input type="text" id="boeken" name="boeken" value="boek, boek.."><br><br>
+            <label for="quantity">Aantal gekozen boeken (tussen 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+            <input type="submit" value="Verstuur"><br><br>
+        </fieldset>
+    </form><br>
+    <h3>9. Bouw nu zelf een formulier met wat je hiervoor hebt geleerd.</h3>
+
+<form style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" action="">
+<fieldset><legend>One Punch Man Fansite</legend><br>
+    <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" value="naam"><br><br>
+        <label for="alias">Alias:</label>
+        <input type="text" id="alias" name="alias" value="alias"><br><br>
+
+        <label for="male">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="checkbox">Alliance:</label><br><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Heroes</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Monsters</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Secret Society</label><br><br>
+       
+        <label for="Geboortedatum">Geboortedatum:</label>
+        <input type="date" id="Geboortedatum" name="Geboortedatum"><br><br>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+       
+        <input type="reset" value="Reset"><br><br>
+        <input type="submit" value="Submit"><br><br>
+</fieldset>
+</form>
+
+</body>
+
+</html>

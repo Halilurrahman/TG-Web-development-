@@ -1,0 +1,27 @@
+body {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(247, 156, 156);
+}
+  .h1 {
+    color: rgb(198, 198, 226);
+  }
+  .h4 {
+    color: rgb(198, 198, 226);
+  }
+ .p {
+    color: rgb(19, 16, 16);
+    f
+  }
+  /* .z {height: 30px; */
+
+  } 
+  .vid{ margin: 0 auto; width: 50%; 
+
+  }
+
+  .footer{
+    /* position: fixed; */
+  bottom: 0;
+  /* border-top: 1px solid rgb(0, 0, 0); */
+  width: 100%;}
