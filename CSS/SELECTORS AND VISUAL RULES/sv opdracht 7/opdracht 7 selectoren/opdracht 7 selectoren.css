@@ -1,0 +1,25 @@
+p {font-weight: bold;
+
+}
+p + p {
+
+    font-style: italic;
+}
+
+ol li {
+color: crimson;
+
+}
+ol > li {
+background-color: darkgreen;
+
+}
+h2 ~ ol {
+
+    font-stretch: ultra-expanded;}
+
+
+.class1 {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
