@@ -23,3 +23,6 @@ h2 ~ ol {
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
+ol:hover {
+    background-color: blue;
+  }
