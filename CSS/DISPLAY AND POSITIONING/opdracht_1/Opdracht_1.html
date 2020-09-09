@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 1 Display en Positioning</title>
+    <style>
+        div.sticky {
+          position: -webkit-sticky;
+          position: sticky;
+          top: 30px;
+          padding: 5px;
+          background-color: #cae8ca;
+          border: 2px solid #4CAF50;
+        }
+        </style>
+</head>
+
+<body>
+
+   
+    <h1>Opdracht 1
+    </h1>
+
+    <p> Welke position properties zijn er? Leg voor elke position property uit wat het doet. Geef ook aan welke default
+        position waarde elementen hebben die je gebruikt in html.</p>
+
+    <p>Er zijn vijf position properties, static, relative, absolute, fixed en sticky. Deze properties bepalen hoe een
+        element
+        wordt gepositioneerd binnen een document en afhankelijk van de top, right, bottom en left properties krijgen ze
+        hun definitieve plaats erbinnen.
+    </p>
+    <div class="sticky">I am sticky!</div><br><br>
+    <h3>Static</h3>
+    <p>Static is de default value die elementen hebben in html, het volgt de flow van het document zonder dat top,
+        right, bottom, left en z-index properties effect erop hebben.
+    </p>
+    <h3>Relative</h3>
+    <p>Relative plaatst het element ook weer binnen de normale flow van het document maar vervolgens past het
+        zich aan relatief aan de eigen positie die het zou hebben gehad als het static was.
+    </p>
+    <h3>fixed</h3>
+    <p>Het element wordt uit de normale flow gehaald en gepositioneerd t.o.v. het venster (de viewport) er wordt geen
+        ruimte gereserveerd voor het element binnen de normale flow.
+        Bij het scrollen van de webpagina blijft het gefixeerde element op zijn plaats.
+        Top, right, bottom en left properties bepalen de uiteindelijke locatie.</p>
+
+    <h3>Absolute</h3>
+    <p>
+        Net als bij fixed alleen wordt het nu gepostioneerd t.o.v. het parent element. Preciezer gezegd: t.o.v. het
+        eerste niet statische parent-element. De procedure is als volgt: eerst wordt gekeken naar de parent (het
+        omhullende element). Is dat niet relative, absolute of fixed dan kijken we verder
+        bij diens parent. Zo gaan we door tot we een relative, absolute of fixed element vinden, dat is de referentie.
+        Vinden we geen enkele ancestor die voldoet, dan is de body het referentie-element. De margins van absolute
+        gepositioneerde boxen klappen niet in met andere margins. Ook is het van belang om te beseffen dat zulke
+        properties de "hoogte"/"diepte" van een element beïnvloeden wat weer onverwachte gevolgen kan hebben voor je layout.
+    </p>
+
+<h3>Sticky</h3>
+
+<p>Een sticky element wordt gepositioneerd volgens de normale flow en wordt vervolgens relatief gekoppeld aan de dichtstbijzijnde ouderelement die zou kunnen scrollen.
+</p>    
+
+</body>
+
+</html>
