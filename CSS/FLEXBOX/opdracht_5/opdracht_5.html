@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdr 5 flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            background-color: darkkhaki;
+            width: max-content;
+            height: 200px;
+        }
+
+        .box {
+            margin: 27px;
+            padding: 40px;
+            padding-left: 45px;
+            padding-right: 45px;
+            background-color: rgb(115, 204, 149);
+            text-align: center;
+            color: black;
+
+        }
+
+        p {
+            margin: 0%;
+        }
+
+        .row1 {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .row2 {
+            justify-content: space-around;
+            align-items: stretch;
+        }
+
+        .row3 {
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .row4 {
+            justify-content: space-evenly;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="row1 container">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+        <div class="box">
+            <p>5</p>
+        </div>
+        <div class="box">
+            <p>6</p>
+        </div>
+    </div>
+    <br>
+    <div class=" row2 container">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+        <div class="box">
+            <p>5</p>
+        </div>
+        <div class="box">
+            <p>6</p>
+        </div>
+    </div>
+    <br>
+    <div class="row3 container">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+        <div class="box">
+            <p>5</p>
+        </div>
+        <div class="box">
+            <p>6</p>
+        </div>
+    </div>
+    <br>
+    <div class="row4 container">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+        <div class="box">
+            <p>5</p>
+        </div>
+        <div class="box">
+            <p>6</p>
+        </div>
+    </div>
+    <br>
+
+    </div>
+</body>
+
+</html>

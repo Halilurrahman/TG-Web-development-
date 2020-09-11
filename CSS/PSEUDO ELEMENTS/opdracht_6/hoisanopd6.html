@@ -1,0 +1,82 @@
+<style>
+    body {
+        display: flex;
+    }
+    h1 {
+        color: white;
+        text-align: center;
+    }
+    h1::before {
+        background-color: white;
+        border-radius: 50%;
+        content: "";
+        position: absolute;
+        top: 30px;
+        bottom: 60px;
+        left: 2px;
+        right: 90px;
+    }
+    h1::after {
+        content: "";
+        position: absolute;
+        top: 50px;
+        bottom: 40px;
+        left: 75px;
+        right: 20px;
+        background-color: white;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .content {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: black;
+        margin: 100px;
+    }
+    .content::before {
+        background-color: black;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        position: absolute;
+        content: "";
+        top: 20px;
+        left: -20px;
+        right: 50px;
+    }
+    .content::after {
+        background-color: black;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        position: absolute;
+        content: "";
+        top: 20px;
+        left: 70px;
+        right: 50px;
+        bottom: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="content">
+    <h1>1</h1>
+</div>
+<div class="content">
+    <h1>2</h1>
+</div>
+<div class="content">
+    <h1>3</h1>
+</div>
+
+
+
+
+
+9:57
+</body>
+</html>
+
+
