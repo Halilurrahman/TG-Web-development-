@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdracht 6</title>
+
+    <style>
+        .container {
+            display: relative;
+            border: solid black 1px;
+            width: 800px;
+            height: 600px;
+            /* padding: 100px; */
+            /* margin: 100px; */
+            padding: 100px;
+        }
+
+        .card {
+
+            position: absolute;
+            height: 300px;
+            width: 200px;
+            border-radius: 30px;
+            border: solid rgb(68, 31, 31) 2px;
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+            color: ghostwhite;
+            transition: margin-top ease-in-out 0.5s, z-index linear 1s, margin-left linear 0.5s, color 0s;
+        }
+
+        .card:hover {
+            margin-top: -25px;
+            z-index: 1;           
+        }
+        .card4:hover {
+            margin-top: -25px;            
+        }
+
+        .card:hover~.card4 {
+            margin-left: 100px;
+            color: rgb(230, 161, 161);
+        }
+        .card:hover~.card3 {
+            margin-left: 100px;
+            color: rgb(230, 161, 161);
+        }
+        .card:hover~.card2 {
+            margin-left: 100px;
+            color: rgb(230, 161, 161);
+        }
+        .card1 {
+            left: 100px;
+            background-color: blueviolet;
+        }
+        .card2 {
+            left: 200px;
+            background-color: coral;
+        }
+        .card3 {
+            left: 300px;
+            background-color: darkgreen;
+        }
+        .card4 {
+            left: 400px;
+            background-color: firebrick;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card card1">
+            <h3>Pokémon</h3>
+            <p><b>Pikachu</b></p>
+            <img style="width: 100px; height: 100px;" src="/TRANSITIONS/opdracht_6/images/pikachu.png" alt="">
+
+        </div>
+        <div class="card card2">
+            <h3>kaart2</h3>
+            <p><b>Squirtle</b></p>
+            <img style="width: 100px; height: 100px;" src="/TRANSITIONS/opdracht_6/images/squirtle.jpg" alt="">
+        </div>
+        <div class="card card3">
+            <h3>kaart3</h3>
+            <p><b>Bulbasaur</b></p>
+            <img style="width: 100px; height: 100px;" src="/TRANSITIONS/opdracht_6/images/bulbasaur.png" alt="">
+        </div>
+        <div class="card card4">
+            <h3>kaart4</h3>
+            <p><b>Charmander</b></p>
+            <img style="width: 100px; height: 100px;" src="/TRANSITIONS/opdracht_6/images/charmander.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

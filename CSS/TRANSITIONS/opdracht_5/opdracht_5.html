@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdracht 5</title>
+    <style>
+        .container {
+            display: relative;
+            border: solid black 1px;
+            width: 800px;
+            height: 600px;
+        }
+
+        .box {
+            position: absolute;
+            width: 400px;
+            height: 200px;
+            border: solid rgb(68, 31, 31) 5px;
+            box-sizing: border-box;
+            background-image: url(/TRANSITIONS/opdracht_5/images/clint.gif);
+            background-size: cover;
+            margin: 0;
+            z-index: 1;
+
+        }
+
+        .cover {
+            position: absolute;
+            content: "";
+            width: 390px;
+            height: 190px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-left: 5px;
+            background-color: khaki;
+            z-index: 3;
+            /* transition-property: top ease-in 3s; */
+            transition: margin-top linear 2s, transform linear 2s;
+        }
+
+        .clr {
+            position: absolute;
+            content: "";
+            width: 390px;
+            height: 190px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-left: 5px;
+            background-color: rgb(247, 16, 16);
+            opacity: 0;
+            z-index: 2;
+            /* transition-property: top ease-in 3s; */
+            transition: opacity linear 2s;
+        }
+
+        .box:hover .cover {
+            margin-top: 200px;
+            transform: rotate(160deg);
+        }
+
+        .box:hover .clr {
+            opacity: 0.4;
+        }
+
+        /* #box:hover>.#cover:not(hover) {
+        margin-top: 200px;
+            transform: rotate(160deg);
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+
+            <div class="cover"></div>
+            <div class="clr"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

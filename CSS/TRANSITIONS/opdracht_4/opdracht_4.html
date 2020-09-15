@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 4</title>
+    <style>
+        .container {
+            display: flex;
+            border: solid black 1px;
+            width: 800px;
+            height: 600px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: solid black 1px;
+            box-sizing: border-box;
+            padding: 15px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .box1 {
+            transition: margin-right linear 2s, margin-top linear 2s 1s;
+        }
+
+        .box2 {
+            transition: margin-left linear 2s, margin-top ease 2s 1s;
+        }
+
+        .box3 {
+            transition: margin-left linear 1s 1s, margin-bottom ease-in 1s 2s;
+        }
+
+        .container:hover>.box1:not(hover) {
+            margin-right: -750px;
+            margin-top: -550px;
+        }
+
+
+        .container:hover>.box2:not(hover) {
+            margin-left: -750px;
+            margin-top: -550px;
+        }
+
+        .container:hover>.box3:not(hover) {
+            margin-left: -750px;
+            margin-bottom: -550px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h5>Opdracht 5</h5>
+
+    <div class="container">
+
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
