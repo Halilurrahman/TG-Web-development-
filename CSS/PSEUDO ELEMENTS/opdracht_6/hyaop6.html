@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .circle {
+            position: relative;
+            border-radius: 50%;
+            background-color: purple;   
+            padding: 20px;
+            height: 65px;
+            width: 65px;
+            margin: 80px;
+            text-align: center;
+
+        }
+
+        .circle::before {
+            position: absolute;
+            content: ".";
+            border-radius: 50%;
+            background-color: purple;
+            color: bisque;
+            height: 40px;
+            width: 40px;
+            left: -100px;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="circle">
+        <h1>1</h1>
+        
+
+    </div>
+
+</body>
+
+</html>

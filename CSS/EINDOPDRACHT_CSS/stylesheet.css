@@ -1,0 +1,245 @@
+body {
+    font-family: 'Lobster', cursive;
+    background-color: darkgrey;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: darkgrey;
+    color: black;
+    opacity: 0.8;
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 10px;
+    font-size: 20px;
+    z-index: 1;
+}
+
+header>a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    background-image: url(/EINDOPDRACHT_CSS/images/cooking.jpg);
+    background-position: center;
+    background-size: cover;
+    color: rgb(97, 135, 216);
+}
+
+.cooking {
+    position: absolute;
+    width: 35%;
+    height: 400px;
+    left: 60%;
+    top: 20%;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.cooking>button {
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    transition: ease-in-out 0.4s;
+}
+
+#buttonbuy {
+    font-family: 'Lobster', cursive;
+    color: rgb(97, 135, 216);
+    border: 2px solid rgb(97, 135, 216)
+}
+
+#buttonbuy:hover {
+    background-color: rgb(97, 135, 216);
+}
+
+#buttonshow {
+    font-family: 'Lobster', cursive;
+    color: rgb(128, 179, 128);
+    border: 2px solid rgb(128, 179, 128);
+}
+
+#buttonshow:hover {
+    background-color: rgb(128, 179, 128)
+}
+
+.popular {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.popular>h2 {
+    font-size: 60px;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.poppizza {
+    width: 300px;
+    text-align: center;
+}
+
+.poppizza>h3 {    
+    float: left;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+h3+p {
+        float: right;
+}
+
+.poppizza>img {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.poppizza a {
+    float: right;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.menu>h2 {
+    font-size: 60px;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.ricciardo {
+    width: 300px;
+    height: 500px;
+    background-image: url(/EINDOPDRACHT_CSS/images/chef1.webp);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+.menu-column {
+    margin: 10px;
+    width: 250px;
+}
+
+.menu-column #menu-item {
+    width: inherit;
+}
+
+#menu-item>h4 {
+    /* display: inline; */
+    float: left;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+#menu-item>h4+p {
+    /* display: inline; */
+    float: right;
+    margin-bottom: 0px;
+}
+
+footer {
+    color: rgb(97, 135, 216);
+    background-color: rgb(128, 179, 128);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: space-around;
+    bottom: 0;
+}
+
+footer>h4 {
+    margin: 10px;
+}
+
+footer .footer-contact {
+    width: 250px;
+    height: 250px;
+}
+
+i {
+    width: 20px;
+    height: 20px;
+}
+
+footer .footer-nav {
+    width: 250px;
+    height: 250px;
+}
+
+footer .footer-nav>a {
+    color: rgb(97, 135, 216);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        opacity: 0.8;
+        text-align: center;
+    }
+    header>a {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+    }
+    .hero {
+        text-align: center;
+    }
+    .cooking {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        left: auto;
+        top: 10%;
+    }
+    .cooking>button {
+        margin: 5px;
+        width: 50%;
+        text-align: center;
+    }
+    .ricciardo {
+        width: 0px;
+        height: 0px;
+        margin: 0px;
+    }
+    footer {
+        text-align: center;
+    }}
