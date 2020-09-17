@@ -1,0 +1,37 @@
+
+table{
+width: 100%;
+font-family: 'Open Sans Condensed', sans-serif;
+border-collapse: collapse;
+font-weight: bold;
+
+}
+table, tr, th, td {
+    border:2px solid white;
+}
+th, td {
+    padding: 5px;
+    padding-left: 20px;
+}
+
+tr:nth-child(even) {background-color: #a0aec0;}
+
+
+h1{
+font-size: 80px;
+margin: 10px;
+    color: #4B86CB;
+}
+
+
+th {
+   
+    font-weight: bolder;
+    text-align: left;
+}
+
+
+h6{
+color:
+#a0aec0 #C5DEEA
+}

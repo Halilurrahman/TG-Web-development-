@@ -25,9 +25,9 @@ header>a {
     color: black;
 }
 
-.container {
+/* .container {
     width: 100%;
-}
+} */
 
 .hero {
     position: relative;
@@ -193,11 +193,17 @@ footer .footer-contact {
     width: 250px;
     height: 250px;
 }
-
-i {
-    width: 20px;
-    height: 20px;
+.icon{
+    font-size: 30px;
 }
+i {
+    /* font-size: xx-large; */
+    width: 30px;
+    height: 30px;
+  
+}
+
+
 
 footer .footer-nav {
     width: 250px;
