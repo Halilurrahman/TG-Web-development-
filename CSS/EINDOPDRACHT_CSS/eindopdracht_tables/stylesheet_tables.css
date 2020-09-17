@@ -1,37 +1,95 @@
-
-table{
-width: 100%;
-font-family: 'Open Sans Condensed', sans-serif;
-border-collapse: collapse;
-font-weight: bold;
-
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+table {
+    width: 100%;
+    height: auto;
+    font-family: 'Open Sans Condensed', sans-serif;
+    border-collapse: collapse;
+}
+
 table, tr, th, td {
-    border:2px solid white;
+    border: 2px solid white;
 }
+
 th, td {
     padding: 5px;
     padding-left: 20px;
 }
 
-tr:nth-child(even) {background-color: #a0aec0;}
-
-
-h1{
-font-size: 80px;
-margin: 10px;
-    color: #4B86CB;
-}
-
-
 th {
-   
     font-weight: bolder;
     text-align: left;
 }
 
+tr:nth-child(even) {
+    background-color: #a0aec0;
+}
 
-h6{
-color:
-#a0aec0 #C5DEEA
+h1 {
+    font-size: 60px;
+    margin: 10px;
+    color: #4B86CB;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 10px;
+    color: #4B86CB;
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+fieldset {
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.formrow1 {
+    width: 100%;
+}
+
+.voornaam {
+    width: 40%;
+    margin: 0;
+}
+
+.achternaam {
+    width: 40%;
+}
+
+.age {
+    width: 20%;
+}
+
+input {
+    border-radius: 6px;
+    box-sizing: border-box;
+    border-style: none;
+    padding: 10px;
+    /* margin: 5px; */
+    display: block;
+}
+
+input[type=text], select {
+    background-color: #C5DEEA;
+    /* display: block; */
+}
+
+input[type=email], select {
+    background-color: #C5DEEA;
+    /* display: block; */
 }
