@@ -1,0 +1,107 @@
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.divtable {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+}
+
+table, tr, th, td {
+    border: 2px solid white;
+}
+
+th, td {
+    padding: 5px;
+    padding-left: 20px;
+}
+
+th {
+    font-weight: bolder;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #a0aec0;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 10px;
+    color: #4B86CB;
+}
+
+
+
+h2 {
+    font-size: 40px;
+    margin: 10px;
+    color: #4B86CB;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* justify-content: center; */
+}
+
+label {
+    display: block;
+}
+
+input {
+    border-radius: 6px;
+    box-sizing: border-box;
+    border-style: none;
+    padding: 10px;
+    width: 100%;
+    background-color: #C5DEEA;
+}
+.voornaam{      width: 50%;}
+.achternaam{    width: 30%;}
+.leeftijd{      width: 16%;}
+.company{       width: 40%;}
+.username, .email{width: 28%;}
+.address{width: 98%;}
+.city{width: 30%;}
+.country{width: 35%;}
+.postcode{width: 31%;}
+
+
+.input {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    input {
+        justify-content: flex-start;
+    }
+    .voornaam, .achternaam, .leeftijd, .company, .username, .email, .address, .city, .country, .postcode {
+        width: 95%;
+        display: block;
+       
+    }
+    
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    
+   
+}
+}

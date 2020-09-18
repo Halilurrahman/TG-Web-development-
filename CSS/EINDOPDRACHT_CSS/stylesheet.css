@@ -25,10 +25,6 @@ header>a {
     color: black;
 }
 
-/* .container {
-    width: 100%;
-} */
-
 .hero {
     position: relative;
     margin-top: 50px;
@@ -108,9 +104,6 @@ h1 {
 .poppizza>h3 {    
     display: inline;
     text-align: left;
-    
-    margin-top: 16px;
-    margin-bottom: 0px;
     margin-right: 228px;
    
 }
@@ -170,8 +163,6 @@ h3+p {
    font-size: 16px;
     display: inline;
     text-align: left;    
-    margin-top: 16px;
-    margin-bottom: 0px;
     margin-right: 182px;
 }
 
@@ -204,13 +195,9 @@ footer .footer-contact {
     font-size: 30px;
 }
 i {
-    /* font-size: xx-large; */
     width: 30px;
-    height: 30px;
-  
+    height: 30px;  
 }
-
-
 
 footer .footer-nav {
     width: 250px;
