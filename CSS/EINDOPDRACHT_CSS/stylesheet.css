@@ -106,13 +106,19 @@ h1 {
 }
 
 .poppizza>h3 {    
-    float: left;
+    display: inline;
+    text-align: left;
+    
     margin-top: 16px;
     margin-bottom: 0px;
+    margin-right: 228px;
+   
 }
 
 h3+p {
-        float: right;
+    display: inline;
+    text-align: right;
+    
 }
 
 .poppizza>img {
@@ -122,7 +128,8 @@ h3+p {
 }
 
 .poppizza a {
-    float: right;
+    text-align: right;
+    margin-left: 250px;
 }
 
 .menu {
@@ -160,17 +167,17 @@ h3+p {
 }
 
 #menu-item>h4 {
-    /* display: inline; */
-    float: left;
+   font-size: 16px;
+    display: inline;
+    text-align: left;    
     margin-top: 16px;
     margin-bottom: 0px;
-    font-size: 16px;
+    margin-right: 182px;
 }
 
 #menu-item>h4+p {
-    /* display: inline; */
-    float: right;
-    margin-bottom: 0px;
+    display: inline;
+    text-align: right;
 }
 
 footer {

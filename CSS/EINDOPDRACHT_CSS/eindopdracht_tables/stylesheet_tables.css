@@ -1,14 +1,15 @@
 body {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bold;
-    display: flex;
-    flex-wrap: wrap;
+}
+
+.divtable {
+    width: 100%;
 }
 
 table {
     width: 100%;
     height: auto;
-    font-family: 'Open Sans Condensed', sans-serif;
     border-collapse: collapse;
 }
 
@@ -41,55 +42,53 @@ h2 {
     margin: 10px;
     color: #4B86CB;
     width: 100%;
+    text-align: center;
 }
 
 .form-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-fieldset {
-    width: 100%;
-    border: none;
+    width:100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.formrow1 {
+
+.formrow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#input {
+    display: inline-block;
+}
+#adr{
+    max-width: 100%;
     width: 100%;
 }
-
-.voornaam {
-    width: 40%;
-    margin: 0;
-}
-
-.achternaam {
-    width: 40%;
-}
-
-.age {
-    width: 20%;
-}
-
 input {
     border-radius: 6px;
     box-sizing: border-box;
     border-style: none;
     padding: 10px;
-    /* margin: 5px; */
+    margin-right: 10px;
     display: block;
 }
 
+
 input[type=text], select {
     background-color: #C5DEEA;
-    /* display: block; */
 }
 
 input[type=email], select {
     background-color: #C5DEEA;
-    /* display: block; */
+    }
+    
+@media screen and (max-width: 576px) {
+    .formrow {
+        justify-content: flex-start;
+    }
+
 }
