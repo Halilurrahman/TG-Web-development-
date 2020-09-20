@@ -16,7 +16,12 @@ table {
 table, tr, th, td {
     border: 2px solid white;
 }
+tr:hover{
+    transition: background-color ease-in-out 0.5s;
+background-color: black;
+color: blanchedalmond;
 
+}
 th, td {
     padding: 5px;
     padding-left: 20px;
@@ -31,6 +36,9 @@ tr:nth-child(even) {
     background-color: #a0aec0;
 }
 
+tr:nth-child(even):hover {
+    background-color: #b13852;
+}
 h1 {
     font-size: 60px;
     margin: 10px;
