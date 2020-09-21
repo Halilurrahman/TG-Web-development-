@@ -1,0 +1,22 @@
+@mixin button-styling {
+    background-color: goldenrod;
+    color: red;
+    &:hover{
+background-color: royalblue;
+color: black;
+    }
+}
+@mixin trans {
+    transition-property: background-color, color;
+    transition-duration: 2s;
+
+}
+
+button{
+    @include trans();
+    @include button-styling();
+box-sizing: border-box;
+width: 200px;
+height: 30px;
+border: 2px solid black;
+}
