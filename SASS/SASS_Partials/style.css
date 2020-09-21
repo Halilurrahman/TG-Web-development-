@@ -1,0 +1,15 @@
+button {
+  width: 300px;
+  height: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 5px solid goldenrod;
+  background-color: #e4aecd;
+  color: #eafce5;
+}
+
+button:hover {
+  background-color: #c747c0;
+  color: #eafce5;
+}
+/*# sourceMappingURL=style.css.map */
