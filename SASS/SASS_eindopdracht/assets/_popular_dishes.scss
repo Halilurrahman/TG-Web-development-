@@ -1,0 +1,41 @@
+.popular {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &>h2 {
+        font-size: 60px;
+        width: 100%;
+        margin-top: 1%;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+
+    .poppizza {
+        width: 300px;
+        text-align: center;
+
+        &>h3 {
+            display: inline;
+            text-align: left;
+            margin-right: 228px;
+
+        }
+
+        h3+p {
+            display: inline;
+            text-align: right;
+
+        }
+
+        &>img {
+            text-align: center;
+        }
+
+        a {
+            text-align: right;
+            margin-left: 250px;
+        }
+    }
+}

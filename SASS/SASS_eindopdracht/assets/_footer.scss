@@ -1,0 +1,31 @@
+footer {
+    @extend .popular;
+    color: $hero-1st-color;
+    background-color: $hero-2nd-color;
+    padding-top: 20px;
+    bottom: 0;
+
+    >h4 {
+        margin: 10px;
+    }
+
+    .footer-contact,
+    .footer-nav {
+        width: 250px;
+        height: 250px;
+
+        >a {
+            color: $hero-1st-color;
+            text-decoration: none;
+        }
+    }
+
+    .icon {
+        font-size: 30px;
+    }
+
+    i {
+        width: 30px;
+        height: 30px;
+    }
+}

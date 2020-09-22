@@ -1,0 +1,26 @@
+
+
+.hero {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    background-image: url(/SASS/SASS_eindopdracht/assets/images/cooking.jpg);
+    background-position: center;
+    background-size: cover;
+    color: $hero-1st-color;
+
+
+    .cooking {
+        position: absolute;
+        width: 35%;
+        height: 400px;
+        left: 60%;
+        top: 20%;
+
+        &>button {
+         @include button-general;
+         @import"./button";
+    }
+
+}}
