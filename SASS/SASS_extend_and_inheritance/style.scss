@@ -1,0 +1,25 @@
+$screen-small: 480px;
+$screen-medium: 720px;
+$screen-large: 1024px;
+
+@media screen and (max-width: $screen-small){
+
+    body{
+        width: 100%;
+        text-align: left;
+    }
+}
+@media screen and (max-width: $screen-medium){
+
+    body{
+        width: 70%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: $screen-large){
+
+    body{
+        width: 50%;
+        text-align: right;
+    }
+}

@@ -1,0 +1,21 @@
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    width: 70%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 50%;
+    text-align: right;
+  }
+}
+/*# sourceMappingURL=style.css.map */
