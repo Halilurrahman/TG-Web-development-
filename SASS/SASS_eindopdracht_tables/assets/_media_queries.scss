@@ -1,0 +1,23 @@
+@media screen and (max-width: 576px) {
+
+
+    .form-container {
+        width: 100%;
+        flex-direction: column;
+        padding-left: 2%;
+    
+        .voornaam,
+        .achternaam,
+        .leeftijd,
+        .company,
+        .username,
+        .email,
+        .address,
+        .city,
+        .country,
+        .postcode {
+            width: 95%;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+
+.divtable {
+    width: 100%;
+
+    table {
+        width: 100%;
+        height: auto;
+        border-collapse: collapse;
+
+        table,
+        tr,
+        th,
+        td {
+            border: 2px solid white;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            padding-left: 20px;
+        }
+
+        th {
+            font-weight: bolder;
+            text-align: left;
+        }
+
+        tr:hover {
+            transition: background-color ease-in-out 0.5s;
+            background-color: black;
+            color: blanchedalmond;
+        }
+
+        tr:nth-child(even) {
+            background-color: $second-color;
+
+            &:hover {
+                background-color: $second-color-hover;
+            }
+        }
+    }
+
+}

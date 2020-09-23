@@ -1,0 +1,157 @@
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+}
+
+body h1 {
+  font-size: 60px;
+  margin: 10px;
+  color: #4B86CB;
+}
+
+body h2 {
+  font-size: 40px;
+  margin: 10px;
+  color: #4B86CB;
+  width: 100%;
+  text-align: center;
+}
+
+.divtable {
+  width: 100%;
+}
+
+.divtable table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+}
+
+.divtable table table,
+.divtable table tr,
+.divtable table th,
+.divtable table td {
+  border: 2px solid white;
+}
+
+.divtable table th,
+.divtable table td {
+  padding: 5px;
+  padding-left: 20px;
+}
+
+.divtable table th {
+  font-weight: bolder;
+  text-align: left;
+}
+
+.divtable table tr:hover {
+  -webkit-transition: background-color ease-in-out 0.5s;
+  transition: background-color ease-in-out 0.5s;
+  background-color: black;
+  color: blanchedalmond;
+}
+
+.divtable table tr:nth-child(even) {
+  background-color: #a0aec0;
+}
+
+.divtable table tr:nth-child(even):hover {
+  background-color: #b13852;
+}
+
+.form-container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.form-container label {
+  display: block;
+}
+
+.form-container input {
+  border-radius: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-style: none;
+  padding: 10px;
+  width: 100%;
+  background-color: #C5DEEA;
+}
+
+.form-container .voornaam {
+  width: 50%;
+}
+
+.form-container .achternaam {
+  width: 30%;
+}
+
+.form-container .leeftijd {
+  width: 16%;
+}
+
+.form-container .company {
+  width: 40%;
+}
+
+.form-container .username,
+.form-container .email {
+  width: 28%;
+}
+
+.form-container .address {
+  width: 98%;
+}
+
+.form-container .city {
+  width: 30%;
+}
+
+.form-container .country {
+  width: 35%;
+}
+
+.form-container .postcode {
+  width: 31%;
+}
+
+.form-container .input {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .form-container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 2%;
+  }
+  .form-container .voornaam,
+  .form-container .achternaam,
+  .form-container .leeftijd,
+  .form-container .company,
+  .form-container .username,
+  .form-container .email,
+  .form-container .address,
+  .form-container .city,
+  .form-container .country,
+  .form-container .postcode {
+    width: 95%;
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

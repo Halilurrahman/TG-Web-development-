@@ -1,0 +1,17 @@
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    h1 {
+        font-size: 60px;
+        margin: 10px;
+        color: $primary-color;
+    }
+    
+    h2 {
+        font-size: 40px;
+        margin: 10px;
+        color: $primary-color;
+        width: 100%;
+        text-align: center;
+    }
+}

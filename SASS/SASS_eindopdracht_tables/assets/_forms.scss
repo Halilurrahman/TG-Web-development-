@@ -1,0 +1,70 @@
+
+
+.form-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+
+
+    label {
+        display: block;
+    }
+    
+    input {
+        border-radius: 6px;
+        box-sizing: border-box;
+        border-style: none;
+        padding: 10px;
+        width: 100%;
+        background-color: $third-color;
+    }
+    
+    .voornaam {
+        width: 50%;
+    }
+    
+    .achternaam {
+        width: 30%;
+    }
+    
+    .leeftijd {
+        width: 16%;
+    }
+    
+    .company {
+        width: 40%;
+    }
+    
+    .username,
+    .email {
+        width: 28%;
+    }
+    
+    .address {
+        width: 98%;
+    }
+    
+    .city {
+        width: 30%;
+    }
+    
+    .country {
+        width: 35%;
+    }
+    
+    .postcode {
+        width: 31%;
+    }
+    
+    .input {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+
+
+}
+
