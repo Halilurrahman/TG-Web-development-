@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Translate months</h1>
+    <input type="number" name="number" id="number">
+    <button onclick="translateMonth()">translate</button>
+    <div id="translatedMonth"></div>
+
+
+    <script>
+        function translateMonth() {
+            let input = document.getElementById("number").value;
+
+            switch (input) {
+
+                case "1":
+                    text = "Januari";
+                    break;
+                case "2":
+                    text = "February";
+                    break;
+                case '3':
+                    text = "March";
+                    break;
+                case "4":
+                    text = "April";
+                    break;
+                case "5":
+                    text = "May";
+                    break;
+                case "6":
+                    text = "June";
+                case "7":
+                    text = "Juli";
+                    break;
+                case "8":
+                    text = "August";
+                    break;
+                case "9":
+                    text = "September";
+                    break;
+                case "10":
+                    text = "October";
+                    break;
+                case "11":
+                    text = "November";
+                    break;
+                case "12":
+                    text = "December";
+                    break;
+            }
+            document.getElementById("translatedMonth").innerHTML = text;
+        }
+        // if (input == 1){
+        //     text = "Januari"
+        // }
+        // if (input == 2){
+        //     text = "February"
+        // }
+        // if (input == 3){
+        //     text = "March"
+        // }
+        // if (input == 4){
+        //     text = "April"
+        // }
+        // if (input == 5){
+        //     text = "May"
+        // }
+        // if (input == 6){
+        //     text = "June"
+        // }
+        // if (input == 7){
+        //     text = "Juli"
+        // }
+        // if (input == 8){
+        //     text = "August"
+        // }
+        // if (input ==  9){
+        //     text = "September"
+        // }
+        // if (input == 10){
+        //     text = "Oktober"
+        // }
+        // if (input == 11){
+        //     text = "November"
+        // }
+        // if (input == 12){
+        //     text = "December"
+        // }
+        //     document.getElementById("translatedMonth").innerHTML = text;
+        // console.log(text);}
+
+
+        //         var day;
+        // switch (new Date().getDay()) {
+        //   case 0:
+        //     day = "Sunday";
+        //     break;
+        //   case 1:
+        //     day = "Monday";
+        //     break;
+        //   case 2:
+        //     day = "Tuesday";
+        //     break;
+        //   case 3:
+        //     day = "Wednesday";
+        //     break;
+        //   case 4:
+        //     day = "Thursday";
+        //     break;
+        //   case 5:
+        //     day = "Friday";
+        //     break;
+        //   case  6:
+        //     day = "Saturday";
+        // }
+        // document.getElementById("demo").innerHTML = "Today is " + day;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" name="number" id="number">
+    <button id="btn" onclick="checkNumber()">Button</button>
+    <div>
+        <span id="label"></span>
+    </div>
+    <script>
+function checkNumber() {
+            let input = document.getElementById("number").value;
+            let text;
+            if (input > 30 && input <35  ||  input > 40 && input <45){
+                text = "het getal is tussen 30 en 35 of het getal is tussen 40 en 45"
+            }
+            document.getElementById("label").innerHTML = text;
+        }
+//    van Kris ter vergelijking     function myNumber() {
+//   let number = document.getElementById("number").value;
+//   let label;
+
+//   if (number > 30 && number < 35 || number > 40 && number < 45) {
+//     label = "het getal is tussen 30 en 35 of het getal is tussen 40 en 45.";
+//   }
+//   else
+//   {
+//     label = "";
+//   }
+//   document.getElementById("label").innerHTML = label;
+// }
+
+
+// function checkNumber() {
+//             let input = document.getElementById("number").value;
+//             let text;
+//             if (input == 21 || input == 23){
+//                 text = "Het ingevoerde getal is gelijk aan 21 of 23"
+//             }
+//             document.getElementById("label").innerHTML = text;
+//         }
+
+        // function checkNumber() {
+        //     let input = document.getElementById("number").value;
+        //     let text;
+        //     if (input > 5 && input < 10) {
+        //         text = "Het ingevoerde getal is tussen 5 en 10"
+        //     }
+        //     document.getElementById("label").innerHTML = text;
+        // }
+
+        // function checkNumber() {
+        //     let input = document.getElementById("number").value;
+        //     let text;
+        //     if (input >= 13 && input <= 20) {
+        //         text = "Het ingevoerde getal is gelijk aan 13 of groter dan 13 en is gelijk aan 20 of kleiner dan 20"
+        //     }
+        //     document.getElementById("label").innerHTML = text;
+        // }
+    </script>
+
+</body>
+
+</html>
