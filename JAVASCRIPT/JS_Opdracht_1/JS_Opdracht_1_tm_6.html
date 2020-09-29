@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Vraag over Strings en Opdracht 1</h3>
+    <p>
+        let text = "abcdefg";<br>
+        console.log(text); // abcdefg.<br>
+        console.log(text.charAt(2)); // c<br>
+        console.log(text.substr(0, 3)); // abc<br>
+        console.log(text.replace("c", "d")); // abddefg<br>
+        Gebruik bovenstaande code om uit te leggen hoe built in methods werken. Het is belangrijk
+        om ook te snappen hoe de documentatie werken. De documentatie legt namelijk uit hoe je
+        de built in methods kan toepassen.<br>
+        De console.log geeft de waarde van de functie aan, charAt(2) geeft aan dat je wilt weten wat de derde charackter
+        is, dus vanaf positie 0, 1, 2. Dat is de c. Substract onttrekt de waarden vanaf positie 0 tot 3, dus 0=a 1=b en
+        2=c. Replace zorgt ervoor dat een specifieke waarde c met in dit geval d wordt vervangen.
+
+
+
+    </p>
+    <p>Opdracht 1: <br>
+        1. Maak een variable aan met let en noem het “getal1” <br>
+        2. Ken geen waarde toe aan de variable.<br>
+        3. Print vervolgens de variable met console.log(“getal1 ” + getal1);.</p>
+    <hr>
+    <p>
+        Opdracht 2: <br>
+        1. Maak een variable aan met const en noem het getal2.<br>
+        2. Ken geen waarde toe aan de variable.<br>
+        3. Print vervolgens de variable met console.log(“getal2 ” + getal2);.</p>
+
+    <p>Je krijgt een error.</p>
+
+    <p>4. Maak een variable aan met const en noem het getal2.<br>
+        5. Ken een Number toe aan de variable.<br>
+        6. Print vervolgens de variable met console.log(“getal2 ” + getal2);.</p>
+    <hr>
+    <p>Opdracht​ 3: <br>
+        1. Maak een let variable en noem het getal3. Ken gelijk een Number 3 aan toe. Hoe
+        programmeer je dat ?<br>
+        2. Print vervolgens de variable met console.log(“getal3 ” + getal3);.</p>
+    <hr>
+    <p>Opdracht 4: <br>
+        1. Hergebruik de variable "getal3 en wijzig de waarde van de variable getal3 naar 5. <br>
+        2. Print vervolgens de variable met console.log(“getal3 ” + getal3);</p>
+    <hr>
+    <p>Opdracht 5: <br>
+        1. Maak een let variable en noem het datatype. <br>
+        2. Ken de waarde true aan de variable. <br>
+        3. Print vervolgens de variable met console.log(“datatype ” + typeof datatype);</p>
+    <p>4. Wat voor type is de waarde false?</p>
+    <p>Het is een boolean, zelfde categorie als true.</p>
+    <hr>
+    <p>Opdracht 6:
+        1. Herhaal opdracht 5 en geef antwoord op de volgende vragen.
+        Hoe herken je dat een waarde String is? Geef ook een voorbeeld. </p>
+    <p>Je herkent een String aan de aanhalingstekens waartussen de waarden staan</p>
+    <p> 2. Hoe herken je dat een waarde Number is? Geef ook een voorbeeld.</p>
+    <p>Je herkent dat de waarde een Number is doordat je een getal erachter ziet.</p>
+    <p> 3. Hoe herken je dat een waarde BigInt is? Geef ook een voorbeeld.</p>
+    <p>Je herkent een BigInt aan het feit dat het een nummer is met n erachter.
+    </p>
+    <p> 4. Hoe herken je dat een waarde Symbol is? Geef ook een voorbeeld.</p>
+    <p>Je herkent dat de waarde een Symbol is doordat je Symbol bij de waarde ziet staan, het zorgt ervoor dat je een
+        unieke kenmerk meegeeft aan dat stukje code.</p>
+
+    <script>
+        let getal1;
+        console.log("getal1" + getal1);
+
+        const getal2 = 8;
+        console.log("getal2" + getal2);
+        let getal3 = 5;
+        console.log("getal3" +
+            getal3)
+        let datatype = true;
+        console.log("datatype " + typeof datatype);
+        let getal20 = 22;
+        console.log("getal20 " + getal20);
+        let getal6 = 6n;
+        console.log("getal6 " + getal6)
+
+        let user = { // belongs to another code
+            name: "John"
+        };
+
+        let id = Symbol("id");
+
+        user[id] = 1;
+
+        alert(user[id]); // we can access the data using the symbol as the key
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdr 12-16</title>
+</head>
+
+<body>
+    <p>Opdracht 12:<br>
+        1. Maak twee variables aan met twee verschillende Strings. Geef de variables een
+        logische naam waaraan je kunt afleiden wat het inhoudt.<br>
+        2. Eerste variable heeft de waarde “Voornaam”.<br>
+        3. Tweede variable heeft de waarde “Achternaam”.<br>
+        4. Print vervolgens de variables met console.log(<eerste variable naam> + <tweede variable naam>);<br>
+                Wat merk je op t.o.v het uitprinten van numbers?<br></p>
+
+    <p>Je krijgt de Strings inhoud naast elkaar te zien ipv een berekening of de naam die je gegeven hebt. </p>
+    <hr>
+    <p>Opdracht 13:<br>
+        1. Maak een String variable aan met de waarde “3”.<br>
+        2. Maak een Number variable aan met de waarde 3.<br>
+        3. Maak een variable aan die heet combinedText en voeg de eerste en de tweede
+        variable samen en ken de samengevoegde waarde toe aan de variable
+        combinedText.<br>
+        4. Print vervolgens de combinedText in jou console.</p>
+    <p>Wat merk ik op? ik merk op dat de String en de number naast elkaar worden gezet en niet opgeteld, ook al zijn
+        beiden getallen.</p>
+    <hr>
+    <p>Opdracht 14:
+        1. Een String kun je ook aanduiden met single quote (‘). Wanneer zou je een String met
+        single quote gebruiken? <br>
+        Je zou single quotes moeten gebruiken als je dubbele aanhalingstekens gebruikt voor een String en vice versa.
+        Als je dezelfde tekens gebruikt binnen de String dan stopt de waarde bij de tweede aanhalingstekens ipv de
+        laatste. <br>
+        2. Maak een voorbeeld code waarbij je een single quote zou gebruiken.</p>
+    <p>let vnaam = "Voornaam = 'Hans'";</p>
+    <hr>
+
+    <p>Opdracht 15:<br>
+        1. Copy de volgende code in jouw VSCode:<br>
+        ​let​ ​text​ = ​"text"​;<br>
+        ​text​ += ​"another text"​;<br>
+        ​console​.​log​(​text​);<br>
+        2. Wat wordt er geprint ?<br>
+        Er staat nu textanother text
+        3. Hoe zou je het anders kunnen schrijven en dezelfde uitkomst hebben ?<br>
+        Je zou another text in de eerste let kunnen zetten of in de console bracket: let text = "textanother text"; of
+        console.log(text + another text);
+    </p>
+    <hr>
+    <p>Opdracht 16:<br>
+        Voor deze opdracht is het handig om in te lezen over methods van String. Aan de linkerkant
+        staat een menubalk. Onder de categorie methods staan een lijst met functies die je met een
+        String kan aanroepen.
+        Maak een eigen voorbeeld van de volgende functies en licht toe wat de functie doet in het
+        blok:<br>
+        1. charAt()<br>
+        charAt laat je een specifieke karakter selecteren binnen de string, in ons geval laat 3 de vierde character
+        selecteren(0,1,2,3). <br>
+        2. concat()<br>
+        Met concat kan je meerdere strings aaneenrijgen.
+        3. slice()<br>
+        Met slice kan je een segment selecteren door de eerste en laatste character te benoemen. <br>
+        4. split()<br>
+        met split kan je een deel van String selecteren door aan te wijzen in wat voor soort "lijst/indeling" gezocht
+        moet worden. <br>
+        5. substr()<br>
+        Met substr kan je ook een deel selecteren, je geeft het begincharacter aan en eventueel hoeveel
+        vervolgcharacters, anders selecteert hij tot het einde.
+    </p>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const strM = 'Mozilla';
+
+        console.log(strM.substr(1, 2));
+        // expected output: "oz"
+
+        console.log(strM.substr(2));
+        // expected output: "zilla"
+
+
+        const str3 = 'The quick brown fox jumps over the lazy dog.';
+
+        const words = str3.split(' ');
+        console.log(words[3]);
+        // expected output: "fox"
+
+        const chars = str3.split('');
+        console.log(chars[8]);
+        // expected output: "k"
+
+        const strCopy = str3.split();
+        console.log(strCopy);
+        // expected output: Array ["The quick brown fox jumps over the lazy dog."]
+
+        const str1 = 'Just';
+        const str2 = 'Go';
+
+        console.log(str1.concat(' ', str2));
+
+        let str = "Apple, Banana, Kiwi";
+        let res = str.slice(7, 13);
+        let strchat = str.charAt(3);
+        console.log(strchat);
+        console.log(res);
+
+
+        let text = "text";
+        text += "another text";
+        console.log(text);
+
+        let vnaam = "Voornaam";
+        let anaam = "Achternaam";
+        console.log(vnaam + anaam);
+
+        let textnumber = "3 ";
+        let number = 3;
+        let combinedText = (textnumber + number);
+        console.log(combinedText);
+
+        // // let number = 3;
+        // // number--;
+        // // console.log(number);
+
+        // // let number = 3;
+        // // const sum = number++ + 2;
+        // // console.log(sum);
+
+        // // let number4 = 4;
+
+        // // console.log(number4 + 4);
+        // let number = 3;
+        // number += 4;
+        // number -=2;
+        // number /=5;
+        // number *=4;
+        // console.log(number);
+    </script>
+
+</body>
+
+</html>
