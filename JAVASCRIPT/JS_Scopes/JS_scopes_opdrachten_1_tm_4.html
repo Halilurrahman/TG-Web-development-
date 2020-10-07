@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Bij opdracht 1 krijg je een error, vermoedelijk omdat de const binnen de functie is gedefinieerd en daarbuiten wordt aangeroepen. Dus een block scope.
+        Bij 2 wordt er ook een error gelogd. Bij opdracht 3 komt er Volvo te staan in de console.
+Bij opdracht 4 komt er Volvo v40 te staan waarbij de carBrand binnen de scope van de inner function valt.
+    </p>
+
+
+<script>
+ 
+// let carName;
+// function printCar() {
+// carBrand = "Volvo";
+// }
+// console.log(carBrand);
+// function printCar() {
+// carBrand = "Volvo";
+// }
+// printCar();
+// console.log(carBrand);
+function printCar() {
+carBrand = "Volvo";
+return function(type) {
+console.log(carBrand + " " + type);
+}
+}
+
+const car = printCar();
+// console.log(printCar);
+// console.log(car);
+car("v40");
+car("v60");
+car("v80");
+    </script>
+</body>
+</html>

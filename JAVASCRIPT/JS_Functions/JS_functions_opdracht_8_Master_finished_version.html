@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .cijferBox {
+            width: 300px;
+            height: 500px;
+            margin: 10px;
+        }
+
+        .cijferBox2 {
+            width: 500px;
+            height: 500px;
+            margin: 10px;
+        }
+
+        #customers {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cijferBox">
+        <table id="customers">
+            <h1>Wiskunde</h1>
+            <tr>
+                <th>Naam</th>
+                <th>Cijfer</th>
+            </tr>
+            <tr id="tablerow">
+                <td>Willem </td>
+                <td contenteditable="true" oninput="grading(this)" id="ww">3</td>
+            </tr>
+            <tr id="tableRow">
+                <td>Jan</td>
+                <td contenteditable="true" oninput="grading(this)" id="wj">7</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Kim Sing</td>
+                <td contenteditable="true" oninput="grading(this)" id="wk">10</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Samantha</td>
+                <td contenteditable="true" oninput="grading(this)" id="ws">4</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Joyce</td>
+                <td contenteditable="true" oninput="grading(this)" id="wjo">5.5</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Gareth</td>
+                <td contenteditable="true" oninput="grading(this)" id="wg">1</td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="cijferBox">
+        <table id="customers">
+            <h1>Natuurkunde</h1>
+            <tr>
+                <th>Naam</th>
+                <th>Cijfer</th>
+            </tr>
+            <tr id="tablerow">
+                <td>Willem </td>
+                <td contenteditable="true" oninput="grading(this)" id="nw">7</td>
+            </tr>
+            <tr id="tableRow">
+                <td>Jan</td>
+                <td contenteditable="true" oninput="grading(this)" id="nj">5</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Kim Sing</td>
+                <td contenteditable="true" oninput="grading(this)" id="nk">8</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Samantha</td>
+                <td contenteditable="true" oninput="grading(this)" id="ns">6</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Joyce</td>
+                <td contenteditable="true" oninput="grading(this)" id="njo">9</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Gareth</td>
+                <td contenteditable="true" oninput="grading(this)" id="ng">5.5</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="cijferBox">
+        <table id="customers">
+            <h1>Nederlands</h1>
+            <tr>
+                <th>Naam</th>
+                <th>Cijfer</th>
+            </tr>
+            <tr id="tablerow">
+                <td>Willem </td>
+                <td contenteditable="true" oninput="grading(this)" id="nedw">7</td>
+            </tr>
+            <tr id="tableRow">
+                <td>Jan</td>
+                <td contenteditable="true" oninput="grading(this)" id="nedj">7</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Kim Sing</td>
+                <td contenteditable="true" oninput="grading(this)" id="nedk">4</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Samantha</td>
+                <td contenteditable="true" oninput="grading(this)" id="neds">8</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Joyce</td>
+                <td contenteditable="true" oninput="grading(this)" id="nedjo">8.5</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Gareth</td>
+                <td contenteditable="true" oninput="grading(this)" id="nedg">4</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="cijferBox">
+        <table id="customers">
+            <h1>Engels</h1>
+            <tr>
+                <th>Naam</th>
+                <th>Cijfer</th>
+            </tr>
+            <tr id="tablerow">
+                <td>Willem </td>
+                <td contenteditable="true" oninput="grading(this)" id="engw">6</td>
+            </tr>
+            <tr id="tableRow">
+                <td>Jan</td>
+                <td contenteditable="true" oninput="grading(this)" id="engj">6</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Kim Sing</td>
+                <td contenteditable="true" oninput="grading(this)" id="engk">5.5</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Samantha</td>
+                <td contenteditable="true" oninput="grading(this)" id="engs">4.3</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Joyce</td>
+                <td contenteditable="true" oninput="grading(this)" id="engjo">5.5</td>
+            </tr>
+            <tr id="tablerow">
+                <td>Gareth</td>
+                <td contenteditable="true" oninput="grading(this)" id="engg">8</td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="cijferBox2">
+        <table id="customers">
+            <h1>Resultaat Gemiddeld</h1>
+            <tr>
+                <th>Naam</th>
+                <th>Talen</th>
+                <th>Beta vakken</th>
+                <th>Volgende klas> 6.5</th>
+            </tr>
+            <tr>
+                <td>Willem</td>
+                <td id="gemTalenW"></td>
+                <td id="gemBetaVakkenW"></td>
+                <td id="gemTotaalW"></td>
+            </tr>
+            <tr>
+                <td>Jan</td>
+                <td id="gemTalenJ"></td>
+                <td id="gemBetaVakkenJ"></td>
+                <td id="gemTotaalJ"></td>
+            </tr>
+            <tr>
+                <td>Kim Sing</td>
+                <td id="gemTalenK"></td>
+                <td id="gemBetaVakkenK"></td>
+                <td id="gemTotaalK"></td>
+            </tr>
+            <tr>
+                <td>Samantha</td>
+                <td id="gemTalenS"></td>
+                <td id="gemBetaVakkenS"></td>
+                <td id="gemTotaalS"></td>
+            </tr>
+            <tr>
+                <td>Joyce</td>
+                <td id="gemTalenJo"></td>
+                <td id="gemBetaVakkenJo"></td>
+                <td id="gemTotaalJo"></td>
+            </tr>
+            <tr>
+                <td>Gareth</td>
+                <td id="gemTalenG"></td>
+                <td id="gemBetaVakkenG"></td>
+                <td id="gemTotaalG"></td>
+            </tr>
+
+        </table>
+    </div>
+    <script src="/JAVASCRIPT/JS_Functions/JS_opdr8alternative.js">
+
+    </script>
+</body>
+
+</html>

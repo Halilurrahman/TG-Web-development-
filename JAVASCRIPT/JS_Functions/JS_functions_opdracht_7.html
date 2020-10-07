@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Opdracht 7:
+    </h1>
+    <p>Hoe geef je 2 of meer parameters mee aan een functie? Geef een voorbeeld.
+        Wat zijn rest parameters? Geef een voorbeeld.
+        Wat is het verschil tussen rest parameters en expliciete parameters die je aangeeft bij een
+        functie?</p>
+    <p>Je geeft meerdere parameters aan een functie door tussen de haakjes meerdere parameters toe te voegen en die te
+        scheiden door een komma.
+        Een rest parameter zorgt ervoor dat heel veel parameters als een soort array de functie worden ingevoerd ook als
+        ze niet expliciet genoemd zijn, expliciete parameters kijken niet verder dan het aangegeven aantal.
+
+    </p>
+    <script>
+        function add(...nums) {
+            // console.log(nums);
+            let total = 0;
+
+            for (const n of nums) {
+                total += n;
+            }
+            return total;
+        }
+        const result = add(5, 10, 20, 30)
+        console.log(result);
+    </script>
+</body>
+
+</html>
