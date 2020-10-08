@@ -14,11 +14,42 @@ let numbersArray = [2,3,6,8,9,10,1,4,5,7]
 
 let fruitsArray =["aardbei", "kiwi", "banaan", "granaatappel", "vijg", "appel" ]
 
-
-console.log(fruitsArray[4]);
-
+let a=fruitsArray[numbersArray[(Math.round(Math.random()*9))]%6];
 
 
-    </script>
+
+//push(), voegt een value toe aan de string op de laatste plek.
+//  pop(), verwijdert de laatste value van een array 
+// shift(),verwijdert de eerste value van een array
+//  slice(), laat je een segment van je array selecteren, je benoemt de eerste value en tot welke het moet selecteren.
+//  splice(), laat je values toevoegen in array op de plek die jij selecteert, je kan ook values vervangen.
+// sort(). zet de array in alfabetische volgorde.(maar je moet wel opletten op hoofdletters)
+
+fruitsArray.push("Lemon");
+console.log(fruitsArray);
+// let poppedArray=fruitsArray.pop();
+// console.log(poppedArray);
+// let slicedFruits=fruitsArray.slice(1, 3);
+// console.log(slicedFruits);
+// let b= fruitsArray.shift();
+// console.log(b);
+let c=fruitsArray.splice(2, 1, "Lychee", "Sinaasappel");
+console.log(c);
+console.log(fruitsArray);
+let d= fruitsArray.sort();
+console.log(d);
+console.log(fruitsArray.length);
+fruitsArray[4]=("peer");
+
+// Je kan indeces omdraaien door een extra index aan te maken, daar eentje te kopieeren en dan vervolgens items opnieuw definieeren. 
+fruitsArray.push("aardbei");
+console.log(fruitsArray);
+   fruitsArray[3]=fruitsArray[5];
+   console.log(fruitsArray);
+   fruitsArray[5]=fruitsArray[8];
+   console.log(fruitsArray);
+   fruitsArray.pop();
+   console.log(fruitsArray);
+   </script>
 </body>
 </html>
