@@ -60,7 +60,7 @@ initial-scale=1.0">
         const sports = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal",
             "zwemmen", "korfbal"
         ]
-       
+
         // for (sport in sports) {
         //     console.log(sports[sport]);
         // }
@@ -74,15 +74,28 @@ initial-scale=1.0">
         //     i++;
         // }
         let i = 0;
-        while ( i < 3) {
-if(i===0){
-    for (let a = 0; a < 10; a++)
-console.log(a);
-}
-    
-        console.log(i);
-         i++
-    }
+        while (i < 3) {
+            if (i === 0) {
+                for (let a = 0; a < 10; a++)
+                    console.log(a + 1);
+            }
+            if (i === 1) {
+                for (let a = 0; a < 21; a++)
+
+                    if (a % 2 == 0) {
+                        console.log(a);
+                    }
+            }
+            if (i === 2){
+                for (let a = 0; a < 31; a++) 
+
+                    if (a % 3 == 0) {
+                        console.log(a);
+                    }
+                }
+            // console.log(i);
+            i++
+        }
     </script>
 </body>
 
