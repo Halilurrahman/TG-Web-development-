@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <div id="clubs" class="clubs"></div>
+
+
+
+
+    <script>
+        let SportclubInfo = {
+            name: "Ajax",
+            typeSport: "Voetbal",
+            members: 100000,
+
+        };
+        console.log(SportclubInfo);
+        // new SportclubInfo("PSV", "Golf", 20000);
+
+
+        class Clubs {
+            constructor(name, sportType, members, contactgegevens) {
+                this.name = name;
+                this.sportType = sportType;
+                this.members = members;
+                this.contactgegevens = contactgegevens;
+            }
+        }
+        class Contactgegevens {
+                    constructor(adres, tel, contactpersoon) {
+                        this.adres = adres;
+                        this.tel = tel;
+                        this.contactpersoon = contactpersoon;
+                    }
+                }
+        console.log(Clubs);
+        // class Contactgegevens { 
+        // constuctor (adres, tel, contactpersoon){
+        //    this.adres = adres;
+        //     this.tel = tel;
+        //     this.contactpersoon = contactpersoon;
+        // }
+        // }
+        // let feyenoordGegevens = new Contactgegevens("rotterdam", 688440393, "Gijppie");
+        // console.log(feyenoordGegevens);
+        let feyenoord = new Clubs("Feyenoord", "Basketbal", 3456, new Contactgegevens("rotterdam", 688440393, "Gijppie"));
+        console.log(feyenoord);
+console.log(feyenoord.contactpersoon.adres);
+
+        // :"De Arena":"Ten Hag",:"0900 8844",
+        // var person = {
+        //   firstName: "John",
+        //   lastName: "Doe",
+        //   age: 50,
+        //   eyeColor: "blue"
+        // };
+
+
+        // let SportclubInfo = {
+        // name:"" ,
+        // typeSport: "",
+        // members:"" ,
+        // };
+
+        // let Contactgegevens = {
+        //     adres:,
+        //     tel:,
+        //     contactpersoon:,
+        // }
+    </script>
+</body>
+
+</html>
