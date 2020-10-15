@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<style>
+    body,
+    button,
+    input[type="text"] {
+        font-family: 'Indie Flower', cursive;
+
+    }
+
+    .containerIcons,
+    .containerBattle,
+    .containerAnswer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .containerAnswer {
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .icon {
+        font-size: 30px;
+    }
+
+    .icon:hover {
+        transition: color 0.5s ease-in-out;
+        color: rgb(187, 20, 20);
+    }
+
+    .iconrock {
+        color: cadetblue;
+    }
+
+    .iconpaper {
+        color: darkgray;
+    }
+
+    i {
+        text-align: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <div class="containerIcons">
+        <i class="icon iconrock lni lni-pyramids" onclick="inputRock()"></i>
+        <i class="icon iconpaper lni lni-layers" onclick="inputPaper()"></i>
+        <i class="icon lni lni-cut" onclick="inputScissors()"></i>
+    </div>
+    <hr>
+    <div class="containerBattle">
+        <input type="text" name="text" id="input" contenteditable="true" value="">
+        <button onclick="checkWinner()">Battle Now!</button>
+        <input type="text" name="choiceComputer" id="choiceComputer">
+    </div>
+    <hr>
+    <div class="containerAnswer">
+        <p style="width: 100%;" id="answer"></p>
+        <p style="width: 100%;" id="playerWins"></p>
+
+    </div>
+  
+
+
+
+
+
+
+
+
+
+    <script>
+        alert(
+            "Hi, click on rock, paper or scissors below or write it yourself and press the button to take on this computer!"
+        );
+
+
+
+
+        function inputRock() {
+            document.getElementById("input").value = "rock";
+        }
+
+        function inputPaper() {
+            document.getElementById("input").value = "paper";
+        }
+
+        function inputScissors() {
+            document.getElementById("input").value = "scissors";
+        }
+        let a = 0;
+        let b = 0;
+
+        function checkWinner() {
+
+            let gameArray = ["rock", "paper", "scissors"];
+            const randomElement = gameArray[Math.floor(Math.random() * gameArray.length)];
+
+            let input = document.getElementById("input").value;
+            document.getElementById("choiceComputer").value = randomElement;
+
+            if (input === randomElement) {
+                document.getElementById("answer").innerHTML = ("It's a draw!");
+            } else if (input === "rock" && randomElement === "paper") {
+                document.getElementById("answer").innerHTML = ("Paper wins!");
+               b= ++b;
+            } else if (input === "rock" && randomElement === "scissors") {
+                document.getElementById("answer").innerHTML = ("Rock wins!");
+                a=++a;
+            } else if (input === "paper" && randomElement === "scissors") {
+                document.getElementById("answer").innerHTML = ("Scissors wins!");
+                b= ++b;
+            } else if (input === "paper" && randomElement === "rock") {
+                document.getElementById("answer").innerHTML = ("Paper wins!");
+                a=++a;
+            } else if (input === "scissors" && randomElement === "paper") {
+                document.getElementById("answer").innerHTML = ("Scissors wins!");
+                a=++a;
+            } else if (input === "scissors" && randomElement === "rock") {
+                document.getElementById("answer").innerHTML = ("Rock wins!");
+                b= ++b;
+            }
+            document.getElementById("playerWins").innerHTML = ("You have " + a +
+                " victories over your mortal enemy and the Binary Beast has " + b + " victories over you!");
+        }
+    </script>
+
+</body>
+
+</html>

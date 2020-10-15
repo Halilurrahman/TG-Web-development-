@@ -17,65 +17,126 @@
 
 
     <script>
-        let SportclubInfo = {
-            name: "Ajax",
-            typeSport: "Voetbal",
-            members: 100000,
+        // let SportclubInfo = {
+        //     name: "Ajax",
+        //     typeSport: "Voetbal",
+        //     members: 100000,
 
-        };
-        console.log(SportclubInfo);
-        // new SportclubInfo("PSV", "Golf", 20000);
+        // };
+        // console.log(SportclubInfo);
+
+        // beneden staat opdracht 2-3
+
+        //         class Clubs {
+        //             constructor(name, sportType, members, contactgegevens) {
+        //                 this.name = name;
+        //                 this.sportType = sportType;
+        //                 this.members = members;
+        //                 this.contactgegevens = contactgegevens;
+        //             }
+        //         }
+        //         class Contactgegevens {
+        //                     constructor(adres, tel, contactpersoon) {
+        //                         this.adres = adres;
+        //                         this.tel = tel;
+        //                         this.contactpersoon = contactpersoon;
+        //                     }
+        //                 }
+
+        //         let feyenoord = new Clubs("Feyenoord", "Basketbal", 3456, new Contactgegevens("rotterdam", 688440393, "Gijppie"));
+        //         let ajax = new Clubs("Ajax", "Voetbal", 200000, new Contactgegevens("Bijlmer", 62353293, "Johan"));
+        //         let psv = new Clubs("PSV", "aerobics", 3, new Contactgegevens("Eindhoven", "0643223432", "Luc Nilis"));
+        //         let az = new Clubs("AZ", "boerenvoetbal", 34000, new Contactgegevens("Alkmaar", "0031638485743", "Idrissi"));
+
+        // // 
+
+        // let voetbalclubs= [feyenoord,ajax,psv,az];
+
+        // for (let i = 0; i < voetbalclubs.length; i++) {
+        //     const element = voetbalclubs[i];
+        //     console.log(element.name);
+        // }
 
 
-        class Clubs {
-            constructor(name, sportType, members, contactgegevens) {
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        const persons = [
+            new Person("Jan", 24),
+            new Person("Klaas", 15),
+            new Person("Yanis", 42),
+            new Person("Rupel", 55),
+            new Person("Hendrik", 32),
+            new Person("Mono", 28),
+            new Person("West", 23),
+            Person = {
+                name: 'Yanis',
+                age: 3
+            }
+        ]
+        // persons.sort(function(a, b) {
+        //     console.log(a.age);
+        //     console.log(b.age);
+
+        //             return a.age - b.age;
+        //             // console.log(a.age);
+
+        //         });
+        persons.sort((a, b) => a.age - b.age);
+        console.log(persons);
+
+      
+
+
+
+
+        // const persons2ndTypeOfObjects = [
+        //     object1 = {
+        //         name: 'Jan',
+        //         age: 24
+        //     },
+        //     object2 = {
+        //         name: 'Klaas',
+        //         age: 15
+        //     },
+        //     object3 = {
+        //         name: 'Yanis',
+        //         age: 42
+        //     }
+        // ]
+        // persons2ndTypeOfObjects.sort((a, b) => a.age - b.age);
+
+        // console.log(persons2ndTypeOfObjects);
+
+
+
+        
+        class PersonButClassy {
+            constructor(name, age) {
                 this.name = name;
-                this.sportType = sportType;
-                this.members = members;
-                this.contactgegevens = contactgegevens;
+                this.age = age;
             }
         }
-        class Contactgegevens {
-                    constructor(adres, tel, contactpersoon) {
-                        this.adres = adres;
-                        this.tel = tel;
-                        this.contactpersoon = contactpersoon;
-                    }
-                }
-        console.log(Clubs);
-        // class Contactgegevens { 
-        // constuctor (adres, tel, contactpersoon){
-        //    this.adres = adres;
-        //     this.tel = tel;
-        //     this.contactpersoon = contactpersoon;
-        // }
-        // }
-        // let feyenoordGegevens = new Contactgegevens("rotterdam", 688440393, "Gijppie");
-        // console.log(feyenoordGegevens);
-        let feyenoord = new Clubs("Feyenoord", "Basketbal", 3456, new Contactgegevens("rotterdam", 688440393, "Gijppie"));
-        console.log(feyenoord);
-console.log(feyenoord.contactpersoon.adres);
+const classyPeople = [
+new PersonButClassy("Halil", 33),
+new PersonButClassy("Borja", 37),
+new PersonButClassy("Sanae", 25),
+new PersonButClassy("Nanayaa", 27),
+new PersonButClassy("Kris", 43),
+new PersonButClassy("Hudeyfa", 5),
+new PersonButClassy("Kim Sing", 67)
+]
 
-        // :"De Arena":"Ten Hag",:"0900 8844",
-        // var person = {
-        //   firstName: "John",
-        //   lastName: "Doe",
-        //   age: 50,
-        //   eyeColor: "blue"
-        // };
+classyPeople.sort(function(a, b) {
+            console.log(a);
+            // console.log(a.age);
 
+                    return a.age - b.age;
+                    // console.log(a.age);
 
-        // let SportclubInfo = {
-        // name:"" ,
-        // typeSport: "",
-        // members:"" ,
-        // };
-
-        // let Contactgegevens = {
-        //     adres:,
-        //     tel:,
-        //     contactpersoon:,
-        // }
+                });
+console.log(classyPeople);
     </script>
 </body>
 
