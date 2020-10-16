@@ -1,40 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-// var tweet = prompt("Write your tweet here, you have 140 characters");
+        // var tweet = prompt("Write your tweet here, you have 140 characters");
 
-// let x = tweet.length;
-// function tweetResponse(x) { 
-// if (x<= 140){
-//   alert("Je hebt " + tweet.length + " karakters gebruikt en je hebt nog " + (140 - tweet.length) + " karakters over!");
+        // let x = tweet.length;
+        // function tweetResponse(x) { 
+        // if (x<= 140){
+        //   alert("Je hebt " + tweet.length + " karakters gebruikt en je hebt nog " + (140 - tweet.length) + " karakters over!");
 
 
-//  else (x>140);
-// alert("Je tweet is te lang we kunnen alleen maar "+ tweet.slice(0, 140) + " tonen." );
-// }
-// }tweetResponse(x=tweet.length);
+        //  else (x>140);
+        // alert("Je tweet is te lang we kunnen alleen maar "+ tweet.slice(0, 140) + " tonen." );
+        // }
+        // }tweetResponse(x=tweet.length);
 
-// hoofdletteropdracht
-// var name=prompt("What is your name?");
-// var firstLetterUpperCase = name.slice(0, 1).toUpperCase();
-// // firstLetterUpperCase = firstLetterUpperCase;
-// var nameLowerCases = name.slice(1, name.length).toLowerCase();
-// // nameLowerCases= nameLowerCases;
-// name = firstLetterUpperCase + nameLowerCases;
+        // hoofdletteropdracht
+        // var name=prompt("What is your name?");
+        // var firstLetterUpperCase = name.slice(0, 1).toUpperCase();
+        // // firstLetterUpperCase = firstLetterUpperCase;
+        // var nameLowerCases = name.slice(1, name.length).toLowerCase();
+        // // nameLowerCases= nameLowerCases;
+        // name = firstLetterUpperCase + nameLowerCases;
 
-// var houseKeeper3 = {
-//     name:"Angela",
-//     formerEmployer:"Hilton",
-//   age: 56
+        // var houseKeeper3 = {
+        //     name:"Angela",
+        //     formerEmployer:"Hilton",
+        //   age: 56
 
-// }
-// console.log(houseKeeper3);
+        // }
+        // console.log(houseKeeper3);
+
+        // function sort(arr[a], arr[b]) {
+        //   if (arr[a].length < arr[b].length) {
+        //     return -1;
+        //   }
+        //   if arr[a].length > arr[b].length) {
+        //     return 1;
+        //   }
+        //   // a must be equal to b
+        //   return 0;
+        // }
+        // 	return arr;
+
+        let arr = [1, 54, 1, 2, 463, 2];
+        // let stringArray=arr.map(String)
+        // arr.map(String);
+        // console.log(arr.map(w => w.length));
+        // console.log(arr.map(String));
+        // arr.map(String)[4];
+        // console.log(arr.map(String)[4].length);
+
+        let y = 0;
+
+        function numberLenSort(arr) {
+            // let stringArray=arr.map(String);
+            let x = arr.map(String);
+
+
+            for (i = 0; i < x.length-1; i++) {
+                // console.log(x.length);
+                if (x[i].length > x[i + 1].length) {
+                    [x[i], x[i + 1]] = [x[i + 1], x[i]];
+
+                }
+           
+            y = x.map(Number); }
+            // return y;   
+            
+return y;
+        }
+
+        
+
+
+        numberLenSort([1, 54, 1, 2, 463, 2]);
+       
+console.log(y);
+        // && x[i + 1].length <= x.length
+
+        var words = [2, 33, "I", "am", "here"];
+        words.map(w => w.length);
+        // > Array [ 5, 5, 1, 2, 4 ]
+        // console.log(words.map(w => w.length));
     </script>
 </body>
+
 </html>
