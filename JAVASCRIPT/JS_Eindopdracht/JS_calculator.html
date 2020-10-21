@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
 </head>
 <style>
     .calculatorBody {
@@ -25,7 +25,20 @@
         height: 50px;
         border-collapse: collapse;
         box-sizing: border-box;
-           }
+    }
+
+    .calculatorTop>.powerbutton {
+        width: 25px;
+        height: 25px;
+        color: #ff8800;
+        background-color: #d3dbe9;
+        border-radius: 50%;
+        text-align: center;
+        margin-top: 9px;
+        margin-left: 9px;
+        padding: 3px;
+        /* background: #d3dbe9; */
+    }
 
     .calculatorDisplay {
         width: 100%;
@@ -108,10 +121,12 @@
 <body>
     <div class="calculatorBody">
 
-        <div class="calculatorTop"></div>
+        <div class="calculatorTop">
+            <i class="powerbutton lni lni-power-switch" onclick="powerOn()"></i>
+        </div>
 
         <div class="calculatorDisplay">
-            <p id="display">0</p>
+            <p id="display"></p>
         </div>
 
         <div class="calculatorRow">
@@ -151,14 +166,24 @@
 
 </body>
 <script>
+    console.log(document.getElementById("display").innerHTML);
+
+    function powerOn() {
+        if (document.getElementById("display").innerHTML === "") {
+            document.getElementById("display").innerHTML = "0";
+        } else {
+            document.getElementById("display").innerHTML = "";
+            y = "";
+        }
+    }
     let y = "";
-   
+
     function onClick(element) {
         document.getElementById('ac').innerHTML = 'c';
         y = y + element.innerHTML;
         document.getElementById("display").innerHTML = y;
     }
-   
+
     function calculate() {
 
         try {
@@ -167,9 +192,7 @@
             let x = +(Math.round(answer + "e+2") + "e-2");
             y = x;
             document.getElementById("display").innerHTML = x;
-        }
-        
-        catch (e) {
+        } catch (e) {
             if (y.charAt(y.length - 1) == "+") {
                 let splicedAnswer = y.slice(0, (y.length - 1));
                 let jsMathAnswer = y.concat(splicedAnswer);
@@ -200,7 +223,7 @@
 
     function reset() {
         y = "";
-        document.getElementById("display").innerHTML = y;
+        document.getElementById("display").innerHTML = "0";
         document.getElementById('ac').innerHTML = 'ac';
     }
 
@@ -209,7 +232,6 @@
         y = answer * (-1);
         document.getElementById("display").innerHTML = y;
     }
-
 </script>
 
 </html>
