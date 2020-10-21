@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let y = "3+";
+// let x=eval(y);
+console.log(y.length);
+// console.log(x);
+function calculate() {
+        try {
+            let answer= eval(y);
+        } catch (e) {
+            if (y.charAt(y.length - 1) == "+") {
+                let splicedAnswer = y.slice(0, (y.length - 1));
+                console.log(splicedAnswer);
+            }}}
+
+            calculate();
+// let test = eval(y);
+// console.log(test);
+
+
+    </script>
+</body>
+</html>
