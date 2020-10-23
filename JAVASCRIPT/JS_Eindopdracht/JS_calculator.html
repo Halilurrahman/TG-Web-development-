@@ -131,51 +131,51 @@
 
         <div class="calculatorRow">
             <button onclick="reset()" class="rowColorGrey ac" id="ac">ac</button>
-            <button onclick="plusMinus()" class="rowColorGrey" id="">+/-</button>
-            <button onclick="onClick(this)" class="rowColorGrey" id="">%</button>
-            <button onclick="onClick(this)" class=" columnColor" id="">/</button>
+            <button onclick="plusMinus()" class="rowColorGrey">+/-</button>
+            <button onclick="onClick(this)" class="rowColorGrey">%</button>
+            <button onclick="onClick(this)" class=" columnColor">/</button>
         </div>
 
         <div class="calculatorRow">
-            <button onclick="onClick(this)" id="button7">7</button>
-            <button onclick="onClick(this)" id="button8">8</button>
-            <button onclick="onClick(this)" id="button9">9</button>
-            <button onclick="onClick(this)" class="columnColor" id="">*</button>
+            <button onclick="onClick(this)">7</button>
+            <button onclick="onClick(this)">8</button>
+            <button onclick="onClick(this)">9</button>
+            <button onclick="onClick(this)" class="columnColor">*</button>
         </div>
 
         <div class="calculatorRow">
-            <button onclick="onClick(this)" id="button4">4</button>
-            <button onclick="onClick(this)" id="button5">5</button>
-            <button onclick="onClick(this)" id="button6">6</button>
-            <button onclick="onClick(this)" class="columnColor" id="">-</button>
+            <button onclick="onClick(this)">4</button>
+            <button onclick="onClick(this)">5</button>
+            <button onclick="onClick(this)">6</button>
+            <button onclick="onClick(this)" class="columnColor">-</button>
         </div>
 
         <div class="calculatorRow">
-            <button onclick="onClick(this)" id="button1">1</button>
-            <button onclick="onClick(this)" id="button2">2</button>
-            <button onclick="onClick(this)" id="button3">3</button>
-            <button onclick="onClick(this)" class="columnColor" id="">+</button>
+            <button onclick="onClick(this)">1</button>
+            <button onclick="onClick(this)">2</button>
+            <button onclick="onClick(this)">3</button>
+            <button onclick="onClick(this)" class="columnColor">+</button>
         </div>
 
         <div class="calculatorRow">
-            <button onclick="onClick(this)" class="button0" id="">0</button>
-            <button onclick="onClick(this)" id="">.</button>
-            <button onclick="calculate()" class="columnColor" id="">=</button>
+            <button onclick="onClick(this)" class="button0">0</button>
+            <button onclick="onClick(this)">.</button>
+            <button onclick="calculate()" class="columnColor">=</button>
         </div>
     </div>
 
 </body>
 <script>
-    console.log(document.getElementById("display").innerHTML);
-
     function powerOn() {
         if (document.getElementById("display").innerHTML === "") {
             document.getElementById("display").innerHTML = "0";
         } else {
             document.getElementById("display").innerHTML = "";
             y = "";
+            document.getElementById('ac').innerHTML = 'ac';
         }
     }
+
     let y = "";
 
     function onClick(element) {
@@ -188,7 +188,6 @@
 
         try {
             let answer = eval(y);
-            // console.log(answer);
             let x = +(Math.round(answer + "e+2") + "e-2");
             y = x;
             document.getElementById("display").innerHTML = x;
