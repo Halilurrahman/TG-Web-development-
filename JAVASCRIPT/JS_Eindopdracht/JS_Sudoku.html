@@ -146,18 +146,126 @@
         </div>
 
         <hr>
-        <button onclick="checkSudoku()">check sudoku</button>
-        <!-- <button>new sudoku</button> -->
+        <button onclick="checkSudokuBoxes()">check sudoku</button>
+        <button onclick="clearSudokuTileBackgrounds()">clear error markers</button>
 
 
 
 </body>
 <script>
-    function checkSudoku(element) {
-        // if(element.innerHTML)
+    let row1 = document.getElementsByClassName("row1");
+    let row2 = document.getElementsByClassName("row2");
+    let row3 = document.getElementsByClassName("row3");
+    let row4 = document.getElementsByClassName("row4");
+    let row5 = document.getElementsByClassName("row5");
+    let row6 = document.getElementsByClassName("row6");
+    let row7 = document.getElementsByClassName("row7");
+    let row8 = document.getElementsByClassName("row8");
+    let row9 = document.getElementsByClassName("row9");
 
-        console.log(element.innerHTML);
+    let col1 = document.getElementsByClassName("col1");
+
+    let box1 = document.getElementsByClassName("box1");
+    // console.log(document.getElementById("13").innerHTML.length);
+   
+
+    function checkSudokuBoxes() {
+
+        for (let i = 0; i < row1.length; i++) {
+            for (let y = 0; y < row1.length; y++) {
+                if (i != y) {
+                    for (let k=1; k<=9; k++) {
+                        let box = document.getElementsByClassName(`row${k}`);
+                        checkBox(box[i], box[y], `row${k}`);
+                    }
+                    checkBox(row1[i], row1[y], "row1");
+                    checkBox(row2[i], row2[y], "row2");
+                    checkBox(row3[i], row3[y], "row3");
+                    checkBox(row4[i], row4[y], "row4");
+                    checkBox(row5[i], row5[y], "row5");
+                    checkBox(row6[i], row6[y], "row6");
+                    checkBox(row7[i], row7[y], "row7");
+                    checkBox(row8[i], row8[y], "row8");
+                    checkBox(row9[i], row9[y], "row9");
+                }
+                // if (row1[i].innerHTML != "" && row1[y].innerHTML != "" && row1[i].innerHTML == row1[y].innerHTML && i != y) {
+                //     console.log(row1[i].innerHTML + " is dubbel");
+                //     var elements = document.getElementsByClassName('row1');
+                //     for (var m = 0; m < elements.length; m++) {
+                //         elements[m].style.backgroundColor = "red";
+                //     }
+
+                // }
+                // if (row2[i].innerHTML != "" && row2[y].innerHTML != "" && row2[i].innerHTML == row2[y].innerHTML && i != y) {
+                //     console.log(row2[i].innerHTML + " is dubbel");
+                //     var elements = document.getElementsByClassName('row2');
+                //     for (var m = 0; m < elements.length; m++) {
+                //         elements[m].style.backgroundColor = "red";
+                //     }
+
+                // }
+                // if (row3[i].innerHTML != "" && row3[y].innerHTML != "" && row3[i].innerHTML == row3[y].innerHTML && i != y) {
+                //     console.log(row3[i].innerHTML + " is dubbel");
+                //     var elements = document.getElementsByClassName('row3');
+                //     for (var m = 0; m < elements.length; m++) {
+                //         elements[m].style.backgroundColor = "red";
+                //     }
+
+                // }
+                if (box1[i].innerHTML != "" && box1[y].innerHTML != "" && box1[i].innerHTML == box1[y].innerHTML && i != y) {
+                    console.log(box1[i].innerHTML + " is dubbel");
+                    var elements = document.getElementsByClassName('box1');
+                    for (var m = 0; m < elements.length; m++) {
+                        elements[m].style.backgroundColor = "red";
+                    }
+
+                }
+                if (col1[i].innerHTML != "" && col1[y].innerHTML != "" && col1[i].innerHTML == col1[y].innerHTML && i != y) {
+                    console.log(col1[i].innerHTML + " is dubbel");
+                    var elements = document.getElementsByClassName('col1');
+                    for (var m = 0; m < elements.length; m++) {
+                        elements[m].style.backgroundColor = "red";
+                    }
+
+                }
+            }
+        }
+        
+      
     }
+
+    function checkBox(box1, box2, className) {
+        if (box1.innerHTML != "" && box2.innerHTML != "" && box1.innerHTML == box2.innerHTML) {
+            console.log(box1.innerHTML + " is dubbel");
+            var elements = document.getElementsByClassName(className);
+            for (var m = 0; m < elements.length; m++) {
+                elements[m].style.backgroundColor = "red";
+            }
+        }
+    }
+
+    function clearSudokuTileBackgrounds(){
+        var elements = document.getElementsByClassName('sudokuTile');
+                    for (var s = 0; s < elements.length; s++) {
+                        elements[s].style.backgroundColor = "white";
+                    }
+    }
+    //  else {
+    //                             var elements = document.getElementsByClassName('row1');
+    //                             for (var m = 0; m < elements.length; m++) {
+    //                              elements[m].style.backgroundColor = "lightgreen";
+    //                              }
+    //                          }
+
+
+
+    // if(document.getElementById("11").innerHTML==document.getElementById("13").innerHTML||document.getElementById("13").innerHTML){
+    //     let x = document.getElementsByClassName("row1");
+    //     x[].style.backgroundColor= "red";
+    // }
+
+    // console.log(element.innerHTML);
+
     // const sudokuArrayRow1=
 </script>
 

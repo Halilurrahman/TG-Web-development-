@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel = "stylesheet">
+    <!-- <script src="script.js" defer></script> -->
+</head>
+<style>
+*, *::before, *::after {
+box-sizing: border-box;
+font-family: verdana, sans-serif;
+font-weight: normal;
+} 
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+.calculator-grid {
+    display: grid;
+    width: 480px;
+    margin-top: 40px;
+    background-color: slategray; 
+    justify-content: center;
+    align-content: center;
+    /* min-height: 100vh; */
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 120px); 
+    margin: 100px;
+}
+.output {
+    grid-column: 1/ -1;
+    background-color: rgba(0, 0, 0, .75);
+    color: lightsalmon;
+    width: 480px;
+    height: 260px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    /* margin-right: 100px; */
+    /* margin-left: 100px;  */ 
+    justify-content: center;
+    align-items: center; 
+   }
+.span-two {
+    grid-column: span 2;
+}
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgba rgba(255,255,255, .75);
+}
+.calculator-grid > button:hover {
+    background-color: rgba(255,255,255, .75);
+} 
+button {
+    height: 100px;
+    width: 100px;
+    background-color: darkgrey;
+    color: black;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 20px;
+}
+.button2 {
+    background-color: orange;
+}
+.button1 {
+    background-color: lightgray;
+} 
+.button3 {
+    background-color: lightgray;
+    grid-row: span 2;
+}
+
+</style>
+<body>
+        <div class = "calculator-grid">
+            <div class= "output">
+                <div class = "previous-operand"></div>
+                <div class = "current-operand"></div>
+                <p id="display"></p>
+            </div>
+            <button class="button1" id="ac">AC</button>
+            <button class="button1">+/-</button>
+            <button class="button1">%</button>
+            <button class="button2">/</button>
+            <button onclick="onClick(this)">7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="button2">x</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="button2">-</button> 
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="button2">+</button>
+            <button class = "span-two">0</button>
+            <button>.</button>
+            <button class="button2" >=</button>
+        </div>
+</body>
+<script>
+ let y = "";
+let x="3456";
+function onClick(element) {
+    console.log(element);
+    // document.getElementById('ac').innerHTML = 'c';
+    
+    y = y + element.innerHTML;
+    
+    document.getElementById("display").innerHTML = x;
+}
+
+
+
+</script>
+</html>
