@@ -179,8 +179,9 @@
     let y = "";
 
     function onClick(element) {
+        // console.log(element);
         document.getElementById('ac').innerHTML = 'c';
-        y = y + element.innerHTML;
+        y += element.innerHTML;
         document.getElementById("display").innerHTML = y;
     }
 
