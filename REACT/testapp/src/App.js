@@ -1,7 +1,11 @@
 import logo from './logo.svg';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 
 function App() {
+
+    const notify = () => toast("Wow so easy !");
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +21,8 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={notify}>Notify !</button>
+        <ToastContainer />
       </header>
     </div>
   );
