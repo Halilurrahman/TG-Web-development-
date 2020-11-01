@@ -14,3 +14,13 @@ code {
 .heading{
   color: red;
 }
+.foodbox{
+  
+  width: 100px;
+  /* height: 100px; */
+  
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}

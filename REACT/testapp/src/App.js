@@ -1,30 +1,17 @@
-import logo from './logo.svg';
-import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+// import logo from './logo.svg';
 import './App.css';
+import HeaderPortfolio from './components/HeaderPortfolio.js'
 
 function App() {
 
-    const notify = () => toast("Wow so easy !");
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <button onClick={notify}>Notify !</button>
-        <ToastContainer />
-      </header>
-    </div>
+
+     <HeaderPortfolio />
+<img src="images/profilepic_pink_mirrored.png" alt="me" />   
+<img src="https://picsum.photos/200" />
+ </div>
   );
 }
 
