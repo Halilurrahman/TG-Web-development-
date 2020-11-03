@@ -2,11 +2,14 @@
   background: rgb(6,1,95);
   background: linear-gradient(90deg, rgba(6,1,95,1) 40%, rgba(8,235,236,1) 86%, rgba(234,20,208,1) 95%);
   width: 100%;
-  /* height: 1000px; */
-  color: chartreuse;
+  height: auto;
+  color: rgb(255, 255, 255);
   /* display: flex; */
  font-family: "aero";
+ font-size: 1vw;
  /* font-family: "predator"; */
+ padding-top: 20px;
+
 }
 @font-face {
   font-family: "aero";
@@ -14,28 +17,47 @@
   /* font-family: "predator";
   src: url(./fonts/CodePredators-Regular.ttf); */
 }
+.name-top{
+  margin-left: 1vw;
+  font-size: 4vw;
+  /* text-align: center; */
+  background: -webkit-linear-gradient(0deg, rgba(234,20,208,1) 10%, rgba(8,235,236,1) 20%,rgba(6,1,95,1) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
 img{
-  width: 30%;
+  width: 300px;
   height: auto;
   right: 0;
+  margin-top: -100px;
 }
 .HeroBanner{
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  /* flex-wrap: wrap; */
+}
+.btn-menu-container{
+padding-top: 30px;
+z-index: 10;
+
 }
 .btn-menu {
+  outline: none;
   display: block;
-  width: 400px;
+  width: 30vw;
+  min-width: 178px;
   height: 50px;
   border:none;
-  border:solid 2px rgb(255, 217, 2);
+  /* border:solid 2px rgb(255, 217, 2); */
   /* border-radius: 20px; */
   border-left: none;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 20px;
-  background: rgba(255, 255, 255,0);
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
   font-size: 25px;
-  color: rgb(255, 217, 2);
+  color:rgb(255, 255, 255);
 margin-top: 20px;
 
  
@@ -43,5 +65,11 @@ margin-top: 20px;
 
 .btn-menu:hover {
   background:rgb(255, 217, 2);
-  color:rgb(0, 0, 0); 
+  color:rgb(0, 0, 0);
+  outline: none; 
 }
+.btn-menu:focus{
+  outline: none; 
+
+}
+
