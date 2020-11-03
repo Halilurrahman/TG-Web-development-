@@ -1,12 +1,47 @@
 .App{
-  background-color: rgb(29, 2, 65);
+  background: rgb(6,1,95);
+  background: linear-gradient(90deg, rgba(6,1,95,1) 40%, rgba(8,235,236,1) 86%, rgba(234,20,208,1) 95%);
   width: 100%;
-  height: 1000px;
+  /* height: 1000px; */
   color: chartreuse;
+  /* display: flex; */
+ font-family: "aero";
+ /* font-family: "predator"; */
 }
-
+@font-face {
+  font-family: "aero";
+  src: url(./fonts/Aerolite.otf);
+  /* font-family: "predator";
+  src: url(./fonts/CodePredators-Regular.ttf); */
+}
 img{
   width: 30%;
   height: auto;
   right: 0;
+}
+.HeroBanner{
+  display: flex;
+  justify-content: space-between;
+}
+.btn-menu {
+  display: block;
+  width: 400px;
+  height: 50px;
+  border:none;
+  border:solid 2px rgb(255, 217, 2);
+  /* border-radius: 20px; */
+  border-left: none;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 20px;
+  background: rgba(255, 255, 255,0);
+  font-size: 25px;
+  color: rgb(255, 217, 2);
+margin-top: 20px;
+
+ 
+}
+
+.btn-menu:hover {
+  background:rgb(255, 217, 2);
+  color:rgb(0, 0, 0); 
 }
