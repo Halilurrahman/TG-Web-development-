@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 .App{
   background: rgb(6,1,95);
  background: linear-gradient(90deg, rgba(6,1,95,1) 40%, rgba(8,235,236,1) 86%, rgba(234,20,208,1) 95%);

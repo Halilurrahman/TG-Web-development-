@@ -17,17 +17,17 @@ function App() {
       <h1 className="name-top" id="home">Halilurrahman Bagci</h1>
       <div className="HeroBanner">
         <div className="btn-menu-container">
-          <button class="btn-menu">Home</button>
+          <button className="btn-menu">Home</button>
           <br />
-          <a href="#about"><button class="btn-menu">About me..</button></a>
+          <a href="#about"><button className="btn-menu">About me..</button></a>
           <br />
-          <a href="#portfolio"><button class="btn-menu">Portfolio</button></a>
+          <a href="#portfolio"><button className="btn-menu">Portfolio</button></a>
           <br />
-          <a href="#art"><button class="btn-menu">Art & Calligraphy</button></a>
+          <a href="#art"><button className="btn-menu">Art & Calligraphy</button></a>
           <br />
-          <a href="#contact"><button class="btn-menu">Contact me!</button></a>
+          <a href="#contact"><button className="btn-menu">Contact me!</button></a>
           <br />
-          {/* <button class="button">I'm A Button!</button> */}
+         
         </div>
         <img className="profile-pic" src={profilePic} alt="me" />
       </div>
