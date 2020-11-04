@@ -7,7 +7,8 @@ import About from "./components/About/About"
 import Portfolio from "./components/Portfolio/Portfolio"
 import Art from "./components/Art/Art"
 import Contact from "./components/Contact/Contact"
-import { HashLink as Link } from 'react-router-hash-link';
+// import { HashLink as Link } from 'react-router-hash-link';
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
 function App() {
   return (
@@ -15,17 +16,16 @@ function App() {
       {/* <NavbarTest /> */}
       <h1 className="name-top" id="home">Halilurrahman Bagci</h1>
       <div className="HeroBanner">
-        {/* <HeaderPortfolio /> */}
         <div className="btn-menu-container">
           <button class="btn-menu">Home</button>
           <br />
-          <button class="btn-menu">About me..</button>
+          <a href="#about"><button class="btn-menu">About me..</button></a>
           <br />
-          <button class="btn-menu">Portfolio</button>
+          <a href="#portfolio"><button class="btn-menu">Portfolio</button></a>
           <br />
-          <button class="btn-menu">Art & Calligraphy</button>
+          <a href="#art"><button class="btn-menu">Art & Calligraphy</button></a>
           <br />
-          <button class="btn-menu"><Link to="/pathLink#contact">Contact me!</Link></button>
+          <a href="#contact"><button class="btn-menu">Contact me!</button></a>
           <br />
           {/* <button class="button">I'm A Button!</button> */}
         </div>

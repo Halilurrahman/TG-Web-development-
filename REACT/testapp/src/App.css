@@ -1,6 +1,6 @@
 .App{
   background: rgb(6,1,95);
-  background: linear-gradient(90deg, rgba(6,1,95,1) 40%, rgba(8,235,236,1) 86%, rgba(234,20,208,1) 95%);
+ background: linear-gradient(90deg, rgba(6,1,95,1) 40%, rgba(8,235,236,1) 86%, rgba(234,20,208,1) 95%);
   width: 100%;
   height: auto;
   color: rgb(255, 255, 255);
@@ -26,11 +26,15 @@
   -webkit-text-fill-color: transparent;
 
 }
-img{
+.profile-pic{
   width: 300px;
   height: auto;
   right: 0;
   margin-top: -100px;
+ transition: 3s;
+}
+.profile-pic:hover{
+    margin-right: -100px;
 }
 .HeroBanner{
   display: flex;
