@@ -1,5 +1,9 @@
 import React, { Component } from "react";
-import styles from "./Contact.module.css";
+import  "./Contact.css";
+import { GrLinkedin } from 'react-icons/gr';
+import { HiOutlineMail } from 'react-icons/hi';
+import { ImWhatsapp } from 'react-icons/im';
+
 
 class Contact extends Component {
   constructor() {
@@ -12,11 +16,21 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className={styles.Contact}>
+      <div className={Contact}>
         <button class="btn-menu" onClick={this.clickContact} id="contact">
           Contact me!
         </button>
-        Contact Component
+        <div className="contact-box">
+        <p className="about-text">
+          I'm glad to see you've reached this part of the site! 
+        There are several ways to contact me. <br /> 
+        Via LinkedIn: <a href="https://www.linkedin.com/in/halil-bagci-36a0901b0/"><GrLinkedin /></a>
+<br />
+         Via email: <a href = "mailto: halilbagci75@hotmail.com"><HiOutlineMail /></a>
+         <br />
+         Via Whatsapp: <a href="https://wa.me/0031640779949" ><ImWhatsapp /></a>
+        </p>
+      </div>
       </div>
     );
   }

@@ -1,0 +1,12 @@
+
+.jumbotron{
+    background-image: url(../images/code.jpg) ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: ivory;
+    /* height: 50vh; */
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+}

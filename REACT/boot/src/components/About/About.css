@@ -1,0 +1,9 @@
+.aboutBackground{
+    /* background-image: none; */
+    background-image: url(../images/aboutImg.jpg) ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: ivory;
+}

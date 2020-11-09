@@ -7,13 +7,12 @@ import About from "./components/About/About"
 import Portfolio from "./components/Portfolio/Portfolio"
 import Art from "./components/Art/Art"
 import Contact from "./components/Contact/Contact"
-// import { HashLink as Link } from 'react-router-hash-link';
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import HeroBanner from "./components/HeroBanner/HeroBanner"
 
 function App() {
   return (
     <div className="App">
-      {/* <NavbarTest /> */}
+      {/* <NavbarTest />
       <h1 className="name-top" id="home">Halilurrahman Bagci</h1>
       <div className="HeroBanner">
         <div className="btn-menu-container">
@@ -30,9 +29,9 @@ function App() {
          
         </div>
         <img className="profile-pic" src={profilePic} alt="me" />
-      </div>
+      </div> */}
       
-      <hr />
+      <HeroBanner />
       <About />
       <Portfolio />
       <Art />

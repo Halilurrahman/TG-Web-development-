@@ -172,9 +172,9 @@ function Art() {
               alt="5 slide"
             />
             <h3>
-              All that (exists) upon it (i.e., the earth) is vanishing. And
+              All that is upon it is vanishing. And
               there (still) remains (forever) The Face of your Lord, The Owner
-              of Majesty and Munificence.{" "}
+              of Majesty and Munificence.
             </h3>
             <p>Two verses from surah ArRahmaan, written for a friend.</p>
           </Carousel.Item>
@@ -188,7 +188,7 @@ function Art() {
             <h3>Mount Erciyes in the silhouette of a wolf</h3>
             <p>
               A combination of my(sorta, kinda) ancestral home and some ancient
-              Turkic mythology.{" "}
+              Turkic mythology.
             </p>
           </Carousel.Item>
 
@@ -214,7 +214,7 @@ function Art() {
             <h3>Experimenting with quicker/simpler arabic font</h3>
             <p>
               I like to see works in progress, an idea of an almost rune-like
-              arabic font.{" "}
+              arabic font.
             </p>
           </Carousel.Item>
 
